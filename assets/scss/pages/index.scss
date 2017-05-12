@@ -1,0 +1,349 @@
+/// Sass Home Page
+/// @author Diogo Cezar <diogo@diogocezar.com>
+
+// Charset
+@charset 'utf-8';
+
+// Imports
+@import '../base/includes/fonts.scss';
+@import '../base/includes/sizes.scss';
+@import '../base/includes/mixins.scss';
+@import '../base/includes/colors.scss';
+
+// Disable Google Maps Logo
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+// Home
+
+#home{
+	padding-top: 65px;
+	padding-bottom: 65px;
+	h2{
+		font-family: $font-secondary;
+		color: $color-green-dark;
+		font-size: 3.5em;
+		text-align: right;
+		text-transform: uppercase;
+		max-width: 390px;
+		text-align: right;
+		float: right;
+		.home-green{
+			color: $color-green-light;
+		}
+		@include responsive(s1) {
+			font-size: 3em;
+		}
+		@include responsive(s2) {
+			font-size: 2.5em;
+			text-align: center;
+			float:none;
+			max-width: initial;
+		}
+	}
+	#logo{
+		padding-top: 60px;
+		padding-bottom: 60px;
+		height: 300px;
+		@include responsive(s2) {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			height: 200px;
+		}
+	}
+	.col-padding-left{
+		padding-left: 30px;
+		@include responsive(s2) {
+			padding-left: 15px;
+		}
+	}
+	.col-padding-right{
+		padding-right: 30px;
+		@include responsive(s2) {
+			margin-left: 0px;
+			padding-right: 15px;
+		}
+	}
+	.col-border{
+		border-right: 1px solid $color-green-dark;
+		@include responsive(s2) {
+			border:none;
+		}
+	}
+	p{
+		font-family: $font-primary;
+		text-align: left;
+		font-size: 2em;
+		max-width: 360px;
+		color: $color-gray;
+		line-height: 1.2em;
+		margin-top: 22px;
+		@include responsive(s1) {
+			font-size: 1.8em;
+		}
+		@include responsive(s2) {
+			font-size: 1.5em;
+			text-align: center;
+			float:none;
+			max-width: initial;
+		}
+	}
+	i {
+		margin-left: 20px;
+		cursor: pointer;
+		margin-top: 60px;
+		border: solid $color-green-light;
+		border-width: 0 5px 5px 0;
+		display: inline-block;
+		padding: 10px;
+		margin-bottom: 60px;
+		animation-name: animation-floating-down;
+		animation-duration: 1.3s;
+		animation-iteration-count: infinite;
+		@include responsive(s2) {
+			display:none;
+		}
+	}
+	.arrow-down{
+	    transform: rotate(45deg);
+	    -webkit-transform: rotate(45deg);
+	}
+}
+
+// Banner
+
+.banner{
+	position:relative;
+	float:left;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	h2{
+		margin-top: 120px;
+		font-family: $font-secondary;
+		color: $color-white;
+		font-size: 5em;
+		text-transform: uppercase;
+		margin-bottom: 40px;
+		@include responsive(s1) {
+			font-size: 4em;
+		}
+		@include responsive(s2) {
+			font-size: 3em;
+			margin-top: 80px;
+			text-align: center;
+		}
+	}
+	p{
+		font-family: $font-primary;
+		color: $color-white;
+		max-width: 450px;
+		font-size: 1.6em;
+		margin-bottom: 120px;
+		@include responsive(s2) {
+			font-size: 1.5em;
+			text-align: center;
+			float:none;
+			max-width: initial;
+		}
+	}
+}
+
+// Fisioterapia Esportiva
+
+#fisioterapia-esportiva{
+	background-image: url('../../../images/bg-fisioterapia-esportiva.jpg');
+	h2{
+		color: $color-blue;
+		max-width: 350px;
+		@include responsive(s1) {
+			max-width: initial;
+		}
+	}
+}
+
+// Tratamento Postural
+
+#tratamento-postural{
+	background-image: url('../../../images/bg-tratamento-postural.jpg');
+	h2{
+		color: $color-blue-light;
+		max-width: 350px;
+		text-align: right;
+		float:right;
+		@include responsive(s1) {
+			max-width: initial;
+			text-align: center;
+			float:none;
+		}
+	}
+	p{
+		text-align: right;
+		float:right;
+		@include responsive(s1) {
+			max-width: initial;
+			text-align: center;
+			float:none;
+		}
+	}
+}
+
+// Tratamento Funcional
+
+#tratamento-funcional{
+	background-image: url('../../../images/bg-tratamento-funcional.jpg');
+	h2{
+		max-width: 350px;
+		@include responsive(s1) {
+			max-width: initial;
+		}
+	}
+}
+
+// Contato
+
+#contato{
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: $color-blue;
+	.big-contato{
+		font-size: 2.5em;
+		text-transform: uppercase;
+		@include responsive(s3) {
+			font-size: 1.2em;
+		}
+		@include responsive(s4) {
+			font-size: 0.8em;
+		}
+	}
+	.blue-contato{
+		color: $color-blue-light;
+	}
+	h2{
+		position:relative;
+		float:left;
+		width:100%;
+		padding-top: 60px;
+		font-size: $size-s2;
+		font-family: $font-secondary;
+		color: $color-blue-light;
+		@include responsive(s1) {
+			text-align: center;
+		}
+		@include responsive(s4) {
+			font-size: 2.6em;
+		}
+	}
+	h3, h4{
+		color: $color-white-light;
+		@include responsive(s1) {
+			text-align: center;
+		}
+		@include responsive(s4) {
+			font-size: 1.8em;
+		}
+	}
+	h4{
+		padding-bottom: 80px;
+	}
+}
+
+// Map
+
+#nitz-map{
+	min-height: 600px;
+	position: relative;
+	float: left;
+	width: 100%;
+	@include responsive(s4) {
+		min-height: 80vh;
+	}
+}
+
+// Footer
+
+footer{
+	position: relative;
+	float: left;
+	width: 100%;
+	background-color: $color-blue;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	.col-button{
+		height: 75px;
+		@include responsive(s2) {
+			margin-bottom: 25px;
+		}
+		button{
+			svg{
+				position:relative;
+				float:left;
+				margin-right: 10px;
+			}
+			min-width: 285px;
+			background-color: $color-green-light;
+			border: none;
+			padding: 20px;
+			line-height: 34px;
+			font-family: $font-primary;
+			color: $color-white;
+			font-size: 1.6em;
+			border-radius: 20px;
+			position: absolute;
+			@include align(50%, 50%, -50%, -50%);
+			top: 35px;
+			@include transition(.25s);
+			&:hover{
+				background-color: $color-green-dark;
+			}
+			@include responsive(s3) {
+				font-size: 1.4em;
+			}
+			@include responsive(s4) {
+				width: 80%;
+			}
+		}
+	}
+	.col-socials{
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+				position: relative;
+				margin-right: 10px;
+				display:inline-block;
+				a{
+					span{
+						@include transition(.25s);
+						&:hover{
+							background-color: $color-green-dark;
+						}
+						position: relative;
+						float: left;
+						background-color: $color-green-light;
+						border-radius: 50%;
+						width: 74px;
+						height: 74px;
+						svg{
+							height: 32px;
+							width: 32px;
+							position: absolute;
+							@include align(50%, 50%, -50%, -50%)
+						}
+					}
+				}
+			}
+		}
+	}
+}

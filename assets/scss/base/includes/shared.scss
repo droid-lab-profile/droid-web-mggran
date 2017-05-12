@@ -1,0 +1,151 @@
+/// dctb-sass
+/// Sass Boilerplate to start new project with some functionalities.
+/// @author Diogo Cezar <diogo@diogocezar.com>
+
+// Shared
+// Shared Configurations used in all pages
+
+*{
+  outline: none;
+}
+
+body{
+  font-size: $size-base;
+  font-family: $font-primary;
+  background-color: $color-body-background;
+  color: $color-body;
+  overflow: hidden;
+}
+*,
+*:after,
+*:before {
+  @include border-box;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+// Links
+a{
+  color: $color-gray;
+  text-decoration: none;
+  &:hover{
+    color: $color-gray;
+    text-decoration: none;
+  }
+  &:focus{
+    color: $color-gray;
+    text-decoration: none;
+  }
+  &:active{
+    color: $color-gray;
+    text-decoration: none;
+  }
+  &:visited{
+    color: $color-gray;
+    text-decoration: none;
+  }
+}
+
+// Selection
+::-moz-selection {
+  color: $color-white;
+  background: $color-green-light;
+}
+
+::selection {
+  color: $color-white;
+  background: $color-green-light;
+}
+
+// Headings
+h1, h2, h3, h4{
+  font-family: $font-primary;
+  color: $color-gray;
+}
+
+h1{
+  font-size: $size-s0;
+  font-weight: 800;
+}
+h2{
+  font-size: $size-s1;
+  font-weight: 400;
+}
+h3{
+	font-size: $size-s2;
+  font-weight: 400;
+}
+h4{
+  font-size: $size-s3;
+  font-weight: 400;
+}
+
+// Paragraph
+p{
+  font-size: $size-normal;
+}
+
+// Nitz
+
+
+// Generics
+.center{
+  text-align: center;
+}
+
+.img-center{
+  margin: 0 auto;
+}
+
+.no-margin{
+  margin:0px;
+}
+
+.no-padding{
+  padding:0px;
+}
+
+.clear{
+  clear: both;
+}
+
+// Equal Height
+
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  @include responsive(s2) {
+    display:block;
+  }
+}
+
+// Pageloader
+#preloader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $color-white;
+  z-index: 99999;
+  height: 100%;
+}
+
+.preload-img{
+  z-index: 99999;
+  background-image: url("../../../../assets/images/preload.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 350px;
+  width: 350px;
+  position: absolute;
+  @include align(50%, 50%, -50%, -50%);
+}
+
+// Fonts Include
+
+@include font-face("MuseoSans-300", "../../../fonts/MuseoSans-300", null, null, eot woff ttf svg);
+@include font-face("Octanis-Sans", "../../../fonts/Octanis-Sans", null, null, eot woff ttf svg);

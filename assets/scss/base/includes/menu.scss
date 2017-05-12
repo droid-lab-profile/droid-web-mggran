@@ -1,0 +1,125 @@
+/// dctb-sass
+/// Sass Boilerplate to start new project with some functionalities.
+/// @author Diogo Cezar <diogo@diogocezar.com>
+
+// Menu
+// Set the project menu here
+
+nav{
+	position:fixed;
+	background-color: $color-white;
+	width:100%;
+	height: 65px;
+	z-index: 9999;
+	.menu-dropdown{
+		@include transition(.25s);
+		position:fixed;
+		top:0;
+		left:0;
+		background-color: $color-green-light;
+		width: 100vw;
+		height: 100vh;
+    	transform: translateY(115%);
+		z-index: -1;
+		margin-top: 65px;
+		&.active{
+			transform: translateY(0%);
+		}
+		ul{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			position: absolute;
+			@include align(50%, 50%, -50%, -50%);
+			@include responsive(s4) {
+				top: calc(50% - 30px);
+			}
+			li{
+				text-align: center;
+				font-size: $size-s1;
+				padding: 10px;
+				font-family: $font-secondary;
+				text-transform: uppercase;
+				@include responsive(s4) {
+					font-size: 2em;
+				}
+				a{
+					color: $color-white;
+					@include transition(.25s);
+					&:hover{
+						color: $color-green-dark;
+					}
+				}
+			}
+		}
+	}
+	&.off{
+		transform: translate3d(0,-100px,0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+	}
+	&.on{
+		transform: translate3d(0,0px,0);
+		-webkit-transition: all 0.3s ease-in-out 0s;
+		transition: all 0.3s ease-in-out 0s;
+	}
+	.hamburguer{
+		position: fixed;
+		@include transition(.25s);
+		left:50%;
+		@include align(15px, 50%, -50%, 0);
+		height: 40px;
+	    background: transparent;
+	    border-radius: 0;
+		display: block;
+		cursor: pointer;
+		&:after, &:before, span{
+			content: " ";
+			width: 22px;
+			height: 3px;
+			display: block;
+			background: $color-green-light;
+			border-radius: 0px;
+			@include transition(.25s);
+			margin-left: 7px;
+		}
+		&:before{
+			margin-top: 10px;
+		}
+		span{
+			position: relative;
+			margin-top: 4px;
+			margin-bottom: 4px;
+			@include transition(.25s);
+			&:after{
+				position: absolute;
+				font-size: 0.9em;
+				color: $color-gray;
+				font-weight: 600;
+				letter-spacing: 1px;
+				text-transform: uppercase;
+				top: -7px;
+				left: -60px;
+				font-family: $font-primary;
+				@include transition(.25s);
+			}
+		}
+		&.active{
+			&:after{
+				-webkit-transform: rotate(45deg) translate(-7px, -5px);
+				-moz-transform: rotate(45deg) translate(-7px, -5px);
+				-ms-transform: rotate(45deg) translate(-7px, -5px);
+				transform: rotate(45deg) translate(-5px, -5px);
+			}
+			&:before{
+				-webkit-transform: rotate(-45deg) translate(-5px, 4px);
+				-moz-transform: rotate(-45deg) translate(-5px, 4px);
+				-ms-transform: rotate(-45deg) translate(-5px, 4px);
+				transform: rotate(-45deg) translate(-5px, 4px);
+			}
+			span{
+				@include opacity(0);
+			}
+		}
+	}
+}

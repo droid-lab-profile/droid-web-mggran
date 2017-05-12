@@ -1,0 +1,296 @@
+a[href^="http://maps.google.com/maps"] {
+  display: none !important; }
+
+a[href^="https://maps.google.com/maps"] {
+  display: none !important; }
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+  display: none; }
+
+.gmnoprint div {
+  background: none !important; }
+
+#home {
+  padding-top: 65px;
+  padding-bottom: 65px; }
+  #home h2 {
+    font-family: "Octanis-Sans", Arial, sans-serif;
+    color: #246b92;
+    font-size: 3.5em;
+    text-align: right;
+    text-transform: uppercase;
+    max-width: 390px;
+    text-align: right;
+    float: right; }
+    #home h2 .home-green {
+      color: #00a9bb; }
+    @media only screen and (max-width: 1200px) {
+      #home h2 {
+        font-size: 3em; } }
+    @media only screen and (max-width: 992px) {
+      #home h2 {
+        font-size: 2.5em;
+        text-align: center;
+        float: none;
+        max-width: initial; } }
+  #home #logo {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 300px; }
+    @media only screen and (max-width: 992px) {
+      #home #logo {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        height: 200px; } }
+  #home .col-padding-left {
+    padding-left: 30px; }
+    @media only screen and (max-width: 992px) {
+      #home .col-padding-left {
+        padding-left: 15px; } }
+  #home .col-padding-right {
+    padding-right: 30px; }
+    @media only screen and (max-width: 992px) {
+      #home .col-padding-right {
+        margin-left: 0px;
+        padding-right: 15px; } }
+  #home .col-border {
+    border-right: 1px solid #246b92; }
+    @media only screen and (max-width: 992px) {
+      #home .col-border {
+        border: none; } }
+  #home p {
+    font-family: "MuseoSans-300", Arial, sans-serif;
+    text-align: left;
+    font-size: 2em;
+    max-width: 360px;
+    color: #939393;
+    line-height: 1.2em;
+    margin-top: 22px; }
+    @media only screen and (max-width: 1200px) {
+      #home p {
+        font-size: 1.8em; } }
+    @media only screen and (max-width: 992px) {
+      #home p {
+        font-size: 1.5em;
+        text-align: center;
+        float: none;
+        max-width: initial; } }
+  #home i {
+    margin-left: 20px;
+    cursor: pointer;
+    margin-top: 60px;
+    border: solid #00a9bb;
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 60px;
+    animation-name: animation-floating-down;
+    animation-duration: 1.3s;
+    animation-iteration-count: infinite; }
+    @media only screen and (max-width: 992px) {
+      #home i {
+        display: none; } }
+  #home .arrow-down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
+
+.banner {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; }
+  .banner h2 {
+    margin-top: 120px;
+    font-family: "Octanis-Sans", Arial, sans-serif;
+    color: #fff;
+    font-size: 5em;
+    text-transform: uppercase;
+    margin-bottom: 40px; }
+    @media only screen and (max-width: 1200px) {
+      .banner h2 {
+        font-size: 4em; } }
+    @media only screen and (max-width: 992px) {
+      .banner h2 {
+        font-size: 3em;
+        margin-top: 80px;
+        text-align: center; } }
+  .banner p {
+    font-family: "MuseoSans-300", Arial, sans-serif;
+    color: #fff;
+    max-width: 450px;
+    font-size: 1.6em;
+    margin-bottom: 120px; }
+    @media only screen and (max-width: 992px) {
+      .banner p {
+        font-size: 1.5em;
+        text-align: center;
+        float: none;
+        max-width: initial; } }
+
+#fisioterapia-esportiva {
+  background-image: url("../../../images/bg-fisioterapia-esportiva.jpg"); }
+  #fisioterapia-esportiva h2 {
+    color: #002a56;
+    max-width: 350px; }
+    @media only screen and (max-width: 1200px) {
+      #fisioterapia-esportiva h2 {
+        max-width: initial; } }
+
+#tratamento-postural {
+  background-image: url("../../../images/bg-tratamento-postural.jpg"); }
+  #tratamento-postural h2 {
+    color: #00d6e0;
+    max-width: 350px;
+    text-align: right;
+    float: right; }
+    @media only screen and (max-width: 1200px) {
+      #tratamento-postural h2 {
+        max-width: initial;
+        text-align: center;
+        float: none; } }
+  #tratamento-postural p {
+    text-align: right;
+    float: right; }
+    @media only screen and (max-width: 1200px) {
+      #tratamento-postural p {
+        max-width: initial;
+        text-align: center;
+        float: none; } }
+
+#tratamento-funcional {
+  background-image: url("../../../images/bg-tratamento-funcional.jpg"); }
+  #tratamento-funcional h2 {
+    max-width: 350px; }
+    @media only screen and (max-width: 1200px) {
+      #tratamento-funcional h2 {
+        max-width: initial; } }
+
+#contato {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #002a56; }
+  #contato .big-contato {
+    font-size: 2.5em;
+    text-transform: uppercase; }
+    @media only screen and (max-width: 768px) {
+      #contato .big-contato {
+        font-size: 1.2em; } }
+    @media only screen and (max-width: 480px) {
+      #contato .big-contato {
+        font-size: 0.8em; } }
+  #contato .blue-contato {
+    color: #00d6e0; }
+  #contato h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    padding-top: 60px;
+    font-size: 2.8em;
+    font-family: "Octanis-Sans", Arial, sans-serif;
+    color: #00d6e0; }
+    @media only screen and (max-width: 1200px) {
+      #contato h2 {
+        text-align: center; } }
+    @media only screen and (max-width: 480px) {
+      #contato h2 {
+        font-size: 2.6em; } }
+  #contato h3, #contato h4 {
+    color: #f3eee9; }
+    @media only screen and (max-width: 1200px) {
+      #contato h3, #contato h4 {
+        text-align: center; } }
+    @media only screen and (max-width: 480px) {
+      #contato h3, #contato h4 {
+        font-size: 1.8em; } }
+  #contato h4 {
+    padding-bottom: 80px; }
+
+#nitz-map {
+  min-height: 600px;
+  position: relative;
+  float: left;
+  width: 100%; }
+  @media only screen and (max-width: 480px) {
+    #nitz-map {
+      min-height: 80vh; } }
+
+footer {
+  position: relative;
+  float: left;
+  width: 100%;
+  background-color: #002a56;
+  padding-top: 60px;
+  padding-bottom: 60px; }
+  footer .col-button {
+    height: 75px; }
+    @media only screen and (max-width: 992px) {
+      footer .col-button {
+        margin-bottom: 25px; } }
+    footer .col-button button {
+      min-width: 285px;
+      background-color: #00a9bb;
+      border: none;
+      padding: 20px;
+      line-height: 34px;
+      font-family: "MuseoSans-300", Arial, sans-serif;
+      color: #fff;
+      font-size: 1.6em;
+      border-radius: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%) !important;
+      -moz-transform: translate(-50%, -50%) !important;
+      -ms-transform: translate(-50%, -50%) !important;
+      transform: translate(-50%, -50%) !important;
+      top: 35px;
+      -webkit-transition: all 0.25s ease-in-out 0s;
+      -moz-transform: all 0.25s ease-in-out 0s;
+      -ms-transition: all 0.25s ease-in-out 0s;
+      transition: all 0.25s ease-in-out 0s; }
+      footer .col-button button svg {
+        position: relative;
+        float: left;
+        margin-right: 10px; }
+      footer .col-button button:hover {
+        background-color: #246b92; }
+      @media only screen and (max-width: 768px) {
+        footer .col-button button {
+          font-size: 1.4em; } }
+      @media only screen and (max-width: 480px) {
+        footer .col-button button {
+          width: 80%; } }
+  footer .col-socials ul {
+    margin: 0;
+    padding: 0; }
+    footer .col-socials ul li {
+      list-style: none;
+      position: relative;
+      margin-right: 10px;
+      display: inline-block; }
+      footer .col-socials ul li a span {
+        -webkit-transition: all 0.25s ease-in-out 0s;
+        -moz-transform: all 0.25s ease-in-out 0s;
+        -ms-transition: all 0.25s ease-in-out 0s;
+        transition: all 0.25s ease-in-out 0s;
+        position: relative;
+        float: left;
+        background-color: #00a9bb;
+        border-radius: 50%;
+        width: 74px;
+        height: 74px; }
+        footer .col-socials ul li a span:hover {
+          background-color: #246b92; }
+        footer .col-socials ul li a span svg {
+          height: 32px;
+          width: 32px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -webkit-transform: translate(-50%, -50%) !important;
+          -moz-transform: translate(-50%, -50%) !important;
+          -ms-transform: translate(-50%, -50%) !important;
+          transform: translate(-50%, -50%) !important; }

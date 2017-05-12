@@ -1,0 +1,18 @@
+{
+  "name": "dctb-clinica-nitz",
+  "version": "0.0.6",
+  "private": false,
+  "description": "Clinica Nitz Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Diogo Cezar <diogo@diogocezar.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-uglify": "0.3.1",
+    "gulp-sass": "3.1.0"
+  }
+}
