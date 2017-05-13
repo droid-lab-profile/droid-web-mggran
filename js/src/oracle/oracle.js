@@ -103,88 +103,79 @@ Oracle = {
 			$("#preloader").delay(Oracle.Preloader.delay).fadeOut(Oracle.Preloader.velocity);
 		}
 	},
-	Modernizr: {
+	Menu : {
+        config: {
+            senseSpeed    : 5,
+            previusScroll : 0,
+            imediate      : 10,
+            openMenu      : false
+        },
 		init: function(){
-			if (!Modernizr.svg) {
-				$('img[src*="svg"]').attr('src', function() {
-					return $(this).attr('src').replace('.svg', '.png');
-				});
-			}
-		}
-	},
-		Menu : {
-	        config: {
-	            senseSpeed    : 5,
-	            previusScroll : 0,
-	            imediate      : 10,
-	            openMenu      : false
-	        },
-			init: function(){
-				Oracle.Menu.setDebounce();
-				Oracle.Menu.setHamburguer();
-				Oracle.Menu.setScroll();
-			},
-			setScroll: function(){
-				$('.go-menu').on('click',function(event){
-					event.preventDefault();
-				    var $anchor = $(this);
+			Oracle.Menu.setDebounce();
+			Oracle.Menu.setHamburguer();
+			Oracle.Menu.setScroll();
+		},
+		setScroll: function(){
+			$('.go-menu').on('click',function(event){
+				event.preventDefault();
+			    var $anchor = $(this);
+				$(".hamburguer").toggleClass("active");
+				$(".menu-dropdown").toggleClass("active");
+				setTimeout(function(){
+					$(".menu-dropdown").toggleClass("end");
+				}, 500);
+			    $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top}, 1000, 'easeOutQuart');
+			});
+		},
+		setDebounce: function(){
+			$(document).scroll(Oracle.Menu.debounce(function(){ Oracle.Menu.go() }, Oracle.Menu.config.imediate));
+		},
+		setHamburguer: function(){
+			$(".hamburguer").on("click", function(e){
+				e.preventDefault();
+				$(this).toggleClass("active");
+				$(".menu-dropdown").toggleClass("active");
+				setTimeout(function(){
+					$(".menu-dropdown").toggleClass("end");
+				}, 500);
+			});
+		},
+		debounce: function(func, wait, immediate) {
+			var timeout;
+			return function() {
+				var context = this, args = arguments;
+				var later = function() {
+					timeout = null;
+					if (!immediate) func.apply(context, args);
+				};
+				var callNow = immediate && !timeout;
+				clearTimeout(timeout);
+				timeout = setTimeout(later, wait);
+				if (callNow) func.apply(context, args);
+			};
+		},
+		go: function(){
+			var scroller  = $(document).scrollTop();
+			var offset    = $(window).height() * 1/6;
+			var offsetImg = $(".bg-img").height() - ($(window).height() - 200);
+            if (scroller - Oracle.Menu.config.senseSpeed >  Oracle.Menu.config.previousScroll && scroller > offset){
+            	$('#menu').addClass('off');
+            	$('#menu').removeClass('on');
+				if($(".menu-dropdown").hasClass('active')){
 					$(".hamburguer").toggleClass("active");
 					$(".menu-dropdown").toggleClass("active");
 					setTimeout(function(){
 						$(".menu-dropdown").toggleClass("end");
 					}, 500);
-				    $('html, body').stop().animate({ scrollTop: $($anchor.attr('href')).offset().top}, 1000, 'easeOutQuart');
-				});
-			},
-			setDebounce: function(){
-				$(document).scroll(Oracle.Menu.debounce(function(){ Oracle.Menu.go() }, Oracle.Menu.config.imediate));
-			},
-			setHamburguer: function(){
-				$(".hamburguer").on("click", function(e){
-					e.preventDefault();
-					$(this).toggleClass("active");
-					$(".menu-dropdown").toggleClass("active");
-					setTimeout(function(){
-						$(".menu-dropdown").toggleClass("end");
-					}, 500);
-				});
-			},
-			debounce: function(func, wait, immediate) {
-				var timeout;
-				return function() {
-					var context = this, args = arguments;
-					var later = function() {
-						timeout = null;
-						if (!immediate) func.apply(context, args);
-					};
-					var callNow = immediate && !timeout;
-					clearTimeout(timeout);
-					timeout = setTimeout(later, wait);
-					if (callNow) func.apply(context, args);
-				};
-			},
-			go: function(){
-				var scroller  = $(document).scrollTop();
-				var offset    = $(window).height() * 1/6;
-				var offsetImg = $(".bg-img").height() - ($(window).height() - 200);
-                if (scroller - Oracle.Menu.config.senseSpeed >  Oracle.Menu.config.previousScroll && scroller > offset){
-                	$('#menu').addClass('off');
-                	$('#menu').removeClass('on');
-					if($(".menu-dropdown").hasClass('active')){
-						$(".hamburguer").toggleClass("active");
-						$(".menu-dropdown").toggleClass("active");
-						setTimeout(function(){
-							$(".menu-dropdown").toggleClass("end");
-						}, 500);
-					}
-                }
-                else if (scroller + Oracle.Menu.config.senseSpeed < Oracle.Menu.config.previousScroll && scroller > offset){
-                	$('#menu').addClass('on');
-                	$('#menu').removeClass('off');
-                }
-                Oracle.Menu.config.previousScroll = scroller;
-			}
-		},
+				}
+            }
+            else if (scroller + Oracle.Menu.config.senseSpeed < Oracle.Menu.config.previousScroll && scroller > offset){
+            	$('#menu').addClass('on');
+            	$('#menu').removeClass('off');
+            }
+            Oracle.Menu.config.previousScroll = scroller;
+		}
+	},
 	init: function () {
 		var exec = [
 			Oracle.NiceScroll,
