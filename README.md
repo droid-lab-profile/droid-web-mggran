@@ -75,5 +75,6 @@ Instruções para desenvolvimento do layout:
 	* Logotipo;
 	* Links para as redes sociais;
 	* Endereço e Telefone;
+	* Fotos, Nome e Curta descrição dos 12 produtos;
 18. Criar conteúdos para cada um dos blocos com base em entrevista com o cliente;
 19. Publicar atualizações;
