@@ -6,10 +6,10 @@ Instruções para desenvolvimento do layout:
 2. Instalar as dependências do projeto para o gulp:
 
 ```
-	$ npm install
+$ npm install
 ```
 
-	* Isso irá criar uma pasta node_modules na raiz do projeto com todas as dependência para o Gulp;
+* Isso irá criar uma pasta node_modules na raiz do projeto com todas as dependência para o Gulp;
 
 3. Na pasta assets-mggran estão já os assets necessários para a configuração do layout;
 
@@ -25,14 +25,18 @@ Instruções para desenvolvimento do layout:
 6. Para rodar o inspetor de arquivos do gulp:
 
 ```
-	$ gulp wsass
+$ gulp wsass
 ```
+
+* Isso fará com que qualquer alteração nos arquivos .sass gerem automaticamente o correspondente em css.
 
 7. Para minificar os arquivos e criar as pastas dist:
 
 ```
-	$ gulp
+$ gulp
 ```
+
+* O gulp é configurável (javascript) seu código está disponível em .gulpfile.js
 
 8. Para abrir as fotos em uma popup implementar o plugin fancybox;
 
@@ -77,4 +81,41 @@ Instruções para desenvolvimento do layout:
 	* Endereço e Telefone;
 	* Fotos, Nome e Curta descrição dos 12 produtos;
 18. Criar conteúdos para cada um dos blocos com base em entrevista com o cliente;
-19. Publicar atualizações;
+	* Texto sobre a empresa;
+	* Missão;
+	* Visão;
+	* Valores;
+	* Conteúdo CTA Contato;
+	* Texto produtos;
+	* Nome, Texto de cada um dos produtos;
+	* Observação Produtos;
+	* Email (Criar?), Telefones, Endereço;
+	* Redes Sociais;
+19. Criar menu do site:
+	* Home;
+	* Sobre a Empresa;
+	* Produtos;
+	* Contato;
+20. Estrutura de arquivos e pastas:
+	* index.html - Arquivo Principal;
+	* robots.txt - (Estudar) é o arquivo que libera a indexação pelo Google;
+	* .gitignore - São pastas e arquivos que serão ignoradas nos commits (node_modules é utilizando apenas localmente)
+	* assets - É a pasta de assets do projeto
+		* css - São os arquivos css do projeto;
+		* fonts - São as fonts (não disponíveis no google) utilizadas no projeto;
+		* images - São as imagens do projeto;
+		* scss - São os arquivos SASS que irão dar origem aos arquivos CSS;
+	* js - É a pasta com a estrutura de arquivos JS do projeto.
+		* bootstrap - Biblioteca do Bootstrap;
+		* includes - Algumas funcionalides padrões que podem ou não ser incluídas no projeto;
+		* jquery - Biblioteca do JQuery;
+		* libs - Plugins e Bibliotecas utilizadas no projeto;
+			* easing - melhoria de efeitos visuais;
+			* fancybox - popup da imagem;
+			* mouse.whell - scroll do mouse;
+			* nice.scroll - barra de rolagem personalisada;
+		* objects - São os javascripts correspondente a cada uma das páginas do projeto;
+			* index.js - Javascript específico da página index.html
+		* oracle - Javascript Genético, incluído obrigatoriamente por todas as páginas do projeto.
+21. src e dist - São pastas que definem respectivamente: os arquivos editáveis (por seres humanos) e os arquivos comprimidos para publicação
+22. Publicar atualizações;
