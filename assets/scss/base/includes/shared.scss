@@ -147,8 +147,10 @@ p{
 
 // Fonts Include
 
-@include font-face("MuseoSans-300", "../../../fonts/MuseoSans-300", null, null, eot woff ttf svg);
-@include font-face("Octanis-Sans", "../../../fonts/Octanis-Sans", null, null, eot woff ttf svg);
+// @include font-face("MuseoSans-300", "../../../fonts/MuseoSans-300", null, null, eot woff ttf svg);
+// @include font-face("Octanis-Sans", "../../../fonts/Octanis-Sans", null, null, eot woff ttf svg);
+@include font-face("DroidSerif", "../../../fonts/DroidSerif", null, null, ttf);
+@include font-face("Raleway-ExtraLight", "../../../fonts/Raleway-ExtraLight.ttf", null, null, ttf);
 
 // FancyBox
 
