@@ -179,7 +179,6 @@ Oracle = {
 	init: function () {
 		var exec = [
 			Oracle.NiceScroll,
-			Oracle.Modernizr,
 			Oracle.Preloader,
 			Oracle.Menu
 		];

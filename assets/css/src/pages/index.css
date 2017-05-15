@@ -14,7 +14,7 @@ a[href^="https://maps.google.com/maps"] {
   padding-top: 65px;
   padding-bottom: 65px; }
   #home h2 {
-    font-family: "Octanis-Sans", Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #246b92;
     font-size: 3.5em;
     text-align: right;
@@ -59,7 +59,7 @@ a[href^="https://maps.google.com/maps"] {
       #home .col-border {
         border: none; } }
   #home p {
-    font-family: "MuseoSans-300", Arial, sans-serif;
+    font-family: "Droid Serif", serif;
     text-align: left;
     font-size: 2em;
     max-width: 360px;
@@ -103,7 +103,7 @@ a[href^="https://maps.google.com/maps"] {
   background-position: center center; }
   .banner h2 {
     margin-top: 120px;
-    font-family: "Octanis-Sans", Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #fff;
     font-size: 5em;
     text-transform: uppercase;
@@ -117,7 +117,7 @@ a[href^="https://maps.google.com/maps"] {
         margin-top: 80px;
         text-align: center; } }
   .banner p {
-    font-family: "MuseoSans-300", Arial, sans-serif;
+    font-family: "Droid Serif", serif;
     color: #fff;
     max-width: 450px;
     font-size: 1.6em;
@@ -189,7 +189,7 @@ a[href^="https://maps.google.com/maps"] {
     width: 100%;
     padding-top: 60px;
     font-size: 2.8em;
-    font-family: "Octanis-Sans", Arial, sans-serif;
+    font-family: "Raleway", sans-serif;
     color: #00d6e0; }
     @media only screen and (max-width: 1200px) {
       #contato h2 {
@@ -235,7 +235,7 @@ footer {
       border: none;
       padding: 20px;
       line-height: 34px;
-      font-family: "MuseoSans-300", Arial, sans-serif;
+      font-family: "Droid Serif", serif;
       color: #fff;
       font-size: 1.6em;
       border-radius: 20px;
