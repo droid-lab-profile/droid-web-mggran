@@ -1,8 +1,8 @@
 {
-  "name": "dctb-clinica-nitz",
+  "name": "droid-web-mggran",
   "version": "0.0.6",
-  "private": false,
-  "description": "Clinica Nitz Website",
+  "private": true,
+  "description": "MgGran Website",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
