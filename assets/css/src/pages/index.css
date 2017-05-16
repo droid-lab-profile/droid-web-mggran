@@ -13,50 +13,63 @@ a[href^="https://maps.google.com/maps"] {
 #home {
   background-color: #F1F7EE;
   padding-top: 65px;
-  padding-bottom: 65px; }
-  #home h1 {
-    font-family: "Raleway", sans-serif;
-    color: #223843;
-    font-size: 6.1em;
-    line-height: 0.1;
-    color: #B2BD7E; }
-    @media only screen and (max-width: 1200px) {
-      #home h1 {
-        font-size: 5.3em; } }
-    @media only screen and (max-width: 992px) {
-      #home h1 {
-        font-size: 4.3em;
-        text-align: center;
-        float: none;
-        max-width: initial; } }
-  #home h2 {
-    font-family: "Raleway", sans-serif;
-    color: #223843;
-    font-size: 3.7em;
-    font-style: italic; }
-    #home h2 .home-green {
-      color: #749C75; }
-    @media only screen and (max-width: 1200px) {
-      #home h2 {
-        font-size: 3em; } }
-    @media only screen and (max-width: 992px) {
-      #home h2 {
-        font-size: 2.5em;
-        text-align: center;
-        float: none;
-        max-width: initial; } }
+  padding-bottom: 0px; }
   #home #logo {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     height: 270px; }
     @media only screen and (max-width: 992px) {
       #home #logo {
         padding-top: 10px;
         padding-bottom: 10px;
         height: 100px; } }
-  #home .arrow-down {
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg); }
+
+#sobre {
+  background-color: #F1F7EE;
+  padding-top: 0px;
+  padding-bottom: 65px; }
+  #sobre h1 {
+    font-family: "Raleway", sans-serif;
+    color: #223843;
+    font-size: 6.1em;
+    line-height: 0.1;
+    color: #B2BD7E; }
+    @media only screen and (max-width: 1200px) {
+      #sobre h1 {
+        font-size: 5.3em; } }
+    @media only screen and (max-width: 992px) {
+      #sobre h1 {
+        font-size: 4.3em;
+        text-align: center;
+        float: none;
+        max-width: initial; } }
+  #sobre h2 {
+    font-family: "Raleway", sans-serif;
+    color: #223843;
+    font-size: 3.7em;
+    font-style: italic; }
+    #sobre h2 .home-green {
+      color: #749C75; }
+    @media only screen and (max-width: 1200px) {
+      #sobre h2 {
+        font-size: 3em; } }
+    @media only screen and (max-width: 992px) {
+      #sobre h2 {
+        font-size: 2.5em;
+        text-align: center;
+        float: none;
+        max-width: initial; } }
+  #sobre p {
+    font-family: "Droid Serif", serif;
+    font-size: 1.3em;
+    padding: 8% 32% 0% 32%;
+    text-align: center;
+    float: none; }
+    @media only screen and (max-width: 1200px) {
+      #sobre p {
+        max-width: initial;
+        text-align: center;
+        float: none; } }
 
 .decoration {
   padding-top: 35px;

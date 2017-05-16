@@ -27,6 +27,23 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 #home{
 	background-color: $color-green-opaque;
 	padding-top: 65px;
+	padding-bottom: 0px;
+
+	#logo{
+		padding-top: 40px;
+		padding-bottom: 40px;
+		height: 270px;
+		@include responsive(s2) {
+		 	padding-top: 10px;
+		 	padding-bottom: 10px;
+		 	height: 100px;
+		}
+	}
+}
+
+#sobre{
+	background-color: $color-green-opaque;
+	padding-top: 0px;
 	padding-bottom: 65px;
 	h1{
 		font-family: $font-secondary;
@@ -68,72 +85,17 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 			max-width: initial;
 		}
 	}
-	#logo{
-		padding-top: 50px;
-		padding-bottom: 50px;
-		height: 270px;
-		@include responsive(s2) {
-		 	padding-top: 10px;
-		 	padding-bottom: 10px;
-		 	height: 100px;
+	p{
+		font-family: $font-primary;
+		font-size: 1.3em;
+		padding: 8% 32% 0% 32%;
+		text-align: center;
+		float:none;
+		@include responsive(s1) {
+			max-width: initial;
+			text-align: center;
+			float:none;
 		}
-	}
-	// .col-padding-left{
-	// 	padding-left: 30px;
-	// 	@include responsive(s2) {
-	// 		padding-left: 15px;
-	// 	}
-	// }
-	// .col-padding-right{
-	// 	padding-right: 30px;
-	// 	@include responsive(s2) {
-	// 		margin-left: 0px;
-	// 		padding-right: 15px;
-	// 	}
-	// }
-	// .col-border{
-	// 	border-right: 1px solid $color-green-dark;
-	// 	@include responsive(s2) {
-	// 		border:none;
-	// 	}
-	// }
-	// p{
-	// 	font-family: $font-primary;
-	// 	text-align: left;
-	// 	font-size: 2em;
-	// 	max-width: 360px;
-	// 	color: $color-gray;
-	// 	line-height: 1.2em;
-	// 	margin-top: 22px;
-	// 	@include responsive(s1) {
-	// 		font-size: 1.8em;
-	// 	}
-	// 	@include responsive(s2) {
-	// 		font-size: 1.5em;
-	// 		text-align: center;
-	// 		float:none;
-	// 		max-width: initial;
-	// 	}
-	// }
-	// i {
-	// 	margin-left: 20px;
-	// 	cursor: pointer;
-	// 	margin-top: 60px;
-	// 	border: solid $color-green-light;
-	// 	border-width: 0 5px 5px 0;
-	// 	display: inline-block;
-	// 	padding: 10px;
-	// 	margin-bottom: 60px;
-	// 	animation-name: animation-floating-down;
-	// 	animation-duration: 1.3s;
-	// 	animation-iteration-count: infinite;
-	// 	@include responsive(s2) {
-	// 		display:none;
-	// 	}
-	// }
-	.arrow-down{
-	    transform: rotate(45deg);
-	    -webkit-transform: rotate(45deg);
 	}
 }
 
