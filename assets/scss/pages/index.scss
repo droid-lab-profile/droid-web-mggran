@@ -50,13 +50,13 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		}
 	}
 	#logo{
-		padding-top: 60px;
-		padding-bottom: 60px;
+		padding-top: 50px;
+		padding-bottom: 50px;
 		height: 300px;
 		@include responsive(s2) {
-			padding-top: 10px;
-			padding-bottom: 10px;
-			height: 200px;
+		 	padding-top: 10px;
+		 	padding-bottom: 10px;
+		 	height: 100px;
 		}
 	}
 	.col-padding-left{
@@ -118,6 +118,12 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	}
 }
 
+// Decoration
+.decoration{
+	padding-top: 70px;
+	padding-bottom: 70px;
+	width: 33%;
+}
 // Banner
 
 .banner{
