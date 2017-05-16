@@ -39,17 +39,17 @@ Gulp = {
 	js: function(){
 		Gulp.self.task('js', function(){
 			console.log('[JS] Minificando Arquivos JavaScript');
-			Gulp.self.src(['../js/src/**/*.js', '!js/dist/**'])
+			Gulp.self.src(['./js/src/**/*.js', '!js/dist/**'])
 			.pipe(Gulp.uglify())
-			.pipe(Gulp.self.dest('../js/dist'))
+			.pipe(Gulp.self.dest('./js/dist'))
 		});
 	},
 	default: function(){
-		Gulp.self.task('default', ['js', 'css', 'scss', 'pomo']);
+		Gulp.self.task('default', ['js', 'css', 'scss']);
 	},
 	watch: function(){
 		Gulp.self.task('watch', function(){
-			Gulp.self.watch('../js/**/*.js', ['js']);
+			Gulp.self.watch('./js/**/*.js', ['js']);
 			Gulp.self.watch('./assets/css/src/**', ['css']);
 			Gulp.self.watch('./assets/scss/**', ['scss']);
 		});
