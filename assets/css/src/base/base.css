@@ -16,7 +16,7 @@
 
 nav {
   position: fixed;
-  background-color: #fff;
+  background-color: #223843;
   width: 100%;
   height: 65px;
   z-index: 9999; }
@@ -28,7 +28,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #00a9bb;
+    background-color: #749C75;
     width: 100vw;
     height: 100vh;
     transform: translateY(115%);
@@ -60,13 +60,13 @@ nav {
           nav .menu-dropdown ul li {
             font-size: 2em; } }
         nav .menu-dropdown ul li a {
-          color: #fff;
+          color: #F1F7EE;
           -webkit-transition: all 0.25s ease-in-out 0s;
           -moz-transform: all 0.25s ease-in-out 0s;
           -ms-transition: all 0.25s ease-in-out 0s;
           transition: all 0.25s ease-in-out 0s; }
           nav .menu-dropdown ul li a:hover {
-            color: #246b92; }
+            color: #223843; }
   nav.off {
     transform: translate3d(0, -100px, 0);
     -webkit-transition: all 0.3s ease-in-out 0s;
@@ -98,7 +98,7 @@ nav {
       width: 22px;
       height: 3px;
       display: block;
-      background: #00a9bb;
+      background: #F1F7EE;
       border-radius: 0px;
       -webkit-transition: all 0.25s ease-in-out 0s;
       -moz-transform: all 0.25s ease-in-out 0s;
@@ -182,12 +182,12 @@ a {
     text-decoration: none; }
 
 ::-moz-selection {
-  color: #fff;
-  background: #00a9bb; }
+  color: #F1F7EE;
+  background: #749C75; }
 
 ::selection {
-  color: #fff;
-  background: #00a9bb; }
+  color: #F1F7EE;
+  background: #749C75; }
 
 h1, h2, h3, h4 {
   font-family: "Droid Serif", serif;
@@ -242,7 +242,7 @@ p {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: #F1F7EE;
   z-index: 99999;
   height: 100%; }
 

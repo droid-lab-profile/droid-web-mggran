@@ -25,17 +25,36 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 // Home
 
 #home{
+	background-color: $color-green-opaque;
 	padding-top: 65px;
 	padding-bottom: 65px;
+	h1{
+		font-family: $font-secondary;
+		color: $color-green-dark;
+		font-size: 6.1em;
+		line-height: 0.1;
+		color: $color-mostarda;
+
+		@include responsive(s1) {
+			font-size: 5.3em;
+		}
+		@include responsive(s2) {
+			font-size: 4.3em;
+			text-align: center;
+			float:none;
+			max-width: initial;
+		}
+	}
 	h2{
 		font-family: $font-secondary;
 		color: $color-green-dark;
-		font-size: 3.5em;
-		text-align: right;
-		text-transform: uppercase;
-		max-width: 390px;
-		text-align: right;
-		float: right;
+		font-size: 3.7em;
+		font-style: italic;
+		// text-align: right;
+		// text-transform: uppercase;
+		// max-width: 390px;
+		// text-align: right;
+		// float: right;
 		.home-green{
 			color: $color-green-light;
 		}
@@ -52,66 +71,66 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	#logo{
 		padding-top: 50px;
 		padding-bottom: 50px;
-		height: 300px;
+		height: 270px;
 		@include responsive(s2) {
 		 	padding-top: 10px;
 		 	padding-bottom: 10px;
 		 	height: 100px;
 		}
 	}
-	.col-padding-left{
-		padding-left: 30px;
-		@include responsive(s2) {
-			padding-left: 15px;
-		}
-	}
-	.col-padding-right{
-		padding-right: 30px;
-		@include responsive(s2) {
-			margin-left: 0px;
-			padding-right: 15px;
-		}
-	}
-	.col-border{
-		border-right: 1px solid $color-green-dark;
-		@include responsive(s2) {
-			border:none;
-		}
-	}
-	p{
-		font-family: $font-primary;
-		text-align: left;
-		font-size: 2em;
-		max-width: 360px;
-		color: $color-gray;
-		line-height: 1.2em;
-		margin-top: 22px;
-		@include responsive(s1) {
-			font-size: 1.8em;
-		}
-		@include responsive(s2) {
-			font-size: 1.5em;
-			text-align: center;
-			float:none;
-			max-width: initial;
-		}
-	}
-	i {
-		margin-left: 20px;
-		cursor: pointer;
-		margin-top: 60px;
-		border: solid $color-green-light;
-		border-width: 0 5px 5px 0;
-		display: inline-block;
-		padding: 10px;
-		margin-bottom: 60px;
-		animation-name: animation-floating-down;
-		animation-duration: 1.3s;
-		animation-iteration-count: infinite;
-		@include responsive(s2) {
-			display:none;
-		}
-	}
+	// .col-padding-left{
+	// 	padding-left: 30px;
+	// 	@include responsive(s2) {
+	// 		padding-left: 15px;
+	// 	}
+	// }
+	// .col-padding-right{
+	// 	padding-right: 30px;
+	// 	@include responsive(s2) {
+	// 		margin-left: 0px;
+	// 		padding-right: 15px;
+	// 	}
+	// }
+	// .col-border{
+	// 	border-right: 1px solid $color-green-dark;
+	// 	@include responsive(s2) {
+	// 		border:none;
+	// 	}
+	// }
+	// p{
+	// 	font-family: $font-primary;
+	// 	text-align: left;
+	// 	font-size: 2em;
+	// 	max-width: 360px;
+	// 	color: $color-gray;
+	// 	line-height: 1.2em;
+	// 	margin-top: 22px;
+	// 	@include responsive(s1) {
+	// 		font-size: 1.8em;
+	// 	}
+	// 	@include responsive(s2) {
+	// 		font-size: 1.5em;
+	// 		text-align: center;
+	// 		float:none;
+	// 		max-width: initial;
+	// 	}
+	// }
+	// i {
+	// 	margin-left: 20px;
+	// 	cursor: pointer;
+	// 	margin-top: 60px;
+	// 	border: solid $color-green-light;
+	// 	border-width: 0 5px 5px 0;
+	// 	display: inline-block;
+	// 	padding: 10px;
+	// 	margin-bottom: 60px;
+	// 	animation-name: animation-floating-down;
+	// 	animation-duration: 1.3s;
+	// 	animation-iteration-count: infinite;
+	// 	@include responsive(s2) {
+	// 		display:none;
+	// 	}
+	// }
 	.arrow-down{
 	    transform: rotate(45deg);
 	    -webkit-transform: rotate(45deg);
@@ -120,9 +139,9 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 
 // Decoration
 .decoration{
-	padding-top: 70px;
-	padding-bottom: 70px;
-	width: 33%;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	width: 27%;
 }
 // Banner
 

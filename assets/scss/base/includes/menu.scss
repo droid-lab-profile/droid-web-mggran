@@ -7,7 +7,7 @@
 
 nav{
 	position:fixed;
-	background-color: $color-white;
+	background-color: $color-green-dark;
 	width:100%;
 	height: 65px;
 	z-index: 9999;
@@ -78,7 +78,7 @@ nav{
 			width: 22px;
 			height: 3px;
 			display: block;
-			background: $color-green-light;
+			background: $color-white;
 			border-radius: 0px;
 			@include transition(.25s);
 			margin-left: 7px;
