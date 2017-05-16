@@ -88,7 +88,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	p{
 		font-family: $font-primary;
 		font-size: 1.3em;
-		padding: 8% 32% 0% 32%;
+		padding: 7% 32% 0% 32%;
 		text-align: center;
 		float:none;
 		@include responsive(s1) {
@@ -97,17 +97,43 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 			float:none;
 		}
 	}
+	.banner{
+		h3{
+			color: $color-white;
+			font-family: $font-secondary;
+			font-size: 2em;
+			font-weight: bold;
+		}
+		p{
+			color: $color-green-opaque;
+			padding: 3% 10% 0% 10%;
+		}
+		.box{
+			background-color: $color-blue-dark;
+			margin: 1% 1%;
+			padding:1% 1%;
+		}
+		.separator:before {
+			text-align: center;
+		    background-color: $color-mostarda;
+		    content: "";
+		    display: inline-block;
+		    height: 2px;
+		    position: relative;
+		    vertical-align: middle;
+		    width: 20%;
+		}
+	}
 }
 
 // Decoration
 .decoration{
-	padding-top: 35px;
-	padding-bottom: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 	width: 27%;
 }
 // Banner
-
-.banner{
+/* .banner{
 	position:relative;
 	float:left;
 	width: 100%;
@@ -143,7 +169,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 			max-width: initial;
 		}
 	}
-}
+} */
 
 // Fisioterapia Esportiva
 
