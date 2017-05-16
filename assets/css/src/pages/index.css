@@ -34,14 +34,14 @@ a[href^="https://maps.google.com/maps"] {
         float: none;
         max-width: initial; } }
   #home #logo {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     height: 300px; }
     @media only screen and (max-width: 992px) {
       #home #logo {
         padding-top: 10px;
         padding-bottom: 10px;
-        height: 200px; } }
+        height: 100px; } }
   #home .col-padding-left {
     padding-left: 30px; }
     @media only screen and (max-width: 992px) {
@@ -93,6 +93,11 @@ a[href^="https://maps.google.com/maps"] {
   #home .arrow-down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg); }
+
+.decoration {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  width: 33%; }
 
 .banner {
   position: relative;
