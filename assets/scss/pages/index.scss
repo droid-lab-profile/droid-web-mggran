@@ -161,6 +161,103 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	}
 }
 
+
+#produtos {
+	background-color: $color-green-opaque;
+	padding-top: 0px;
+	padding-bottom: 65px;
+	h1{
+		font-family: $font-secondary;
+		color: $color-green-dark;
+		font-size: 6.1em;
+		line-height: 0.1;
+		color: $color-mostarda;
+
+		@include responsive(s1) {
+			font-size: 5.3em;
+		}
+		@include responsive(s2) {
+			font-size: 4.3em;
+			text-align: center;
+			float:none;
+			max-width: initial;
+		}
+	}
+	h2{
+		font-family: $font-secondary;
+		color: $color-green-dark;
+		font-size: 3.7em;
+		font-style: italic;
+		// text-align: right;
+		// text-transform: uppercase;
+		// max-width: 390px;
+		// text-align: right;
+		// float: right;
+		.home-green{
+			color: $color-green-light;
+		}
+		@include responsive(s1) {
+			font-size: 3em;
+		}
+		@include responsive(s2) {
+			font-size: 2.5em;
+			text-align: center;
+			float:none;
+			max-width: initial;
+		}
+	}
+	p{
+		font-family: $font-primary;
+		font-size: 1.3em;
+		padding: 7% 32% 0% 32%;
+		text-align: center;
+		float:none;
+		@include responsive(s1) {
+			padding: 7% 32% 0% 32%;
+			max-width: initial;
+			text-align: center;
+			float:none;
+		}
+		@include responsive(s2) {
+			padding: 7% 12% 0% 12%;
+			max-width: initial;
+			text-align: center;
+			float:none;
+		}
+		@include responsive(s3) {
+			padding: 7% 2% 0% 2%;
+			max-width: initial;
+			text-align: center;
+			float:none;
+		}
+	}
+	.banner{
+		h3{
+			color: $color-white;
+			font-family: $font-secondary;
+			font-size: 2em;
+			font-weight: bold;
+		}
+		p{
+			color: $color-green-opaque;
+			padding: 3% 10% 0% 10%;
+		}
+		.box{
+			background-color: $color-blue-dark;
+			margin: 1% 1%;
+			padding:1% 1%;
+			@include responsive(s2) {
+				margin: 3% 3%;
+				padding:3% 3%;
+			}
+			@include responsive(s3) {
+				margin: 3% 3%;
+				padding:3% 3%;
+			}
+		}
+	}
+}
+
 // separator
 
 .separator:before {

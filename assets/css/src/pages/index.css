@@ -148,6 +148,86 @@ a[href^="https://maps.google.com/maps"] {
     height: 5px;
     width: 8%; }
 
+#produtos {
+  background-color: #F1F7EE;
+  padding-top: 0px;
+  padding-bottom: 65px; }
+  #produtos h1 {
+    font-family: "Raleway", sans-serif;
+    color: #223843;
+    font-size: 6.1em;
+    line-height: 0.1;
+    color: #B2BD7E; }
+    @media only screen and (max-width: 1200px) {
+      #produtos h1 {
+        font-size: 5.3em; } }
+    @media only screen and (max-width: 992px) {
+      #produtos h1 {
+        font-size: 4.3em;
+        text-align: center;
+        float: none;
+        max-width: initial; } }
+  #produtos h2 {
+    font-family: "Raleway", sans-serif;
+    color: #223843;
+    font-size: 3.7em;
+    font-style: italic; }
+    #produtos h2 .home-green {
+      color: #749C75; }
+    @media only screen and (max-width: 1200px) {
+      #produtos h2 {
+        font-size: 3em; } }
+    @media only screen and (max-width: 992px) {
+      #produtos h2 {
+        font-size: 2.5em;
+        text-align: center;
+        float: none;
+        max-width: initial; } }
+  #produtos p {
+    font-family: "Droid Serif", serif;
+    font-size: 1.3em;
+    padding: 7% 32% 0% 32%;
+    text-align: center;
+    float: none; }
+    @media only screen and (max-width: 1200px) {
+      #produtos p {
+        padding: 7% 32% 0% 32%;
+        max-width: initial;
+        text-align: center;
+        float: none; } }
+    @media only screen and (max-width: 992px) {
+      #produtos p {
+        padding: 7% 12% 0% 12%;
+        max-width: initial;
+        text-align: center;
+        float: none; } }
+    @media only screen and (max-width: 768px) {
+      #produtos p {
+        padding: 7% 2% 0% 2%;
+        max-width: initial;
+        text-align: center;
+        float: none; } }
+  #produtos .banner h3 {
+    color: #F1F7EE;
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    font-weight: bold; }
+  #produtos .banner p {
+    color: #F1F7EE;
+    padding: 3% 10% 0% 10%; }
+  #produtos .banner .box {
+    background-color: #223843;
+    margin: 1% 1%;
+    padding: 1% 1%; }
+    @media only screen and (max-width: 992px) {
+      #produtos .banner .box {
+        margin: 3% 3%;
+        padding: 3% 3%; } }
+    @media only screen and (max-width: 768px) {
+      #produtos .banner .box {
+        margin: 3% 3%;
+        padding: 3% 3%; } }
+
 .separator:before {
   text-align: center;
   background-color: #B2BD7E;
