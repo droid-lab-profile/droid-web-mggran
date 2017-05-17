@@ -208,10 +208,9 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	}
 	p{
 		font-family: $font-primary;
-		font-size: 1.3em;
-		padding: 7% 32% 0% 32%;
+		padding: 8% 33% 0% 33%;
 		text-align: center;
-		float:none;
+
 		@include responsive(s1) {
 			padding: 7% 32% 0% 32%;
 			max-width: initial;
@@ -231,8 +230,32 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 			float:none;
 		}
 	}
-	.banner{
+	.banner-produto{
+		background-color: $color-white-full;
+		padding: 20px;
+		margin-top: 20px;
 		h3{
+			color: $color-mostarda;
+			font-family: $font-secondary;
+			font-size: 1.4em;
+			font-weight: bold;
+		}
+		p {
+			padding: 0%;
+		}
+		.button {
+   			background-color: $color-white-full;
+   			color: $color-mostarda;
+   			border: 2px solid;
+   			font-size: 14px;
+			font-weight: 600;
+			height:40px;
+		    min-width: 120px;
+		    max-width: 240px;
+		    text-transform: capitalize;
+		    margin: 10px 0px 20px 0px;
+		}
+		/* h3{
 			color: $color-white;
 			font-family: $font-secondary;
 			font-size: 2em;
@@ -254,7 +277,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 				margin: 3% 3%;
 				padding:3% 3%;
 			}
-		}
+		} */
 	}
 }
 

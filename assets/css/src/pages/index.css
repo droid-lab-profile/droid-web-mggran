@@ -185,10 +185,8 @@ a[href^="https://maps.google.com/maps"] {
         max-width: initial; } }
   #produtos p {
     font-family: "Droid Serif", serif;
-    font-size: 1.3em;
-    padding: 7% 32% 0% 32%;
-    text-align: center;
-    float: none; }
+    padding: 8% 33% 0% 33%;
+    text-align: center; }
     @media only screen and (max-width: 1200px) {
       #produtos p {
         padding: 7% 32% 0% 32%;
@@ -207,26 +205,51 @@ a[href^="https://maps.google.com/maps"] {
         max-width: initial;
         text-align: center;
         float: none; } }
-  #produtos .banner h3 {
-    color: #F1F7EE;
-    font-family: "Raleway", sans-serif;
-    font-size: 2em;
-    font-weight: bold; }
-  #produtos .banner p {
-    color: #F1F7EE;
-    padding: 3% 10% 0% 10%; }
-  #produtos .banner .box {
-    background-color: #223843;
-    margin: 1% 1%;
-    padding: 1% 1%; }
-    @media only screen and (max-width: 992px) {
-      #produtos .banner .box {
-        margin: 3% 3%;
-        padding: 3% 3%; } }
-    @media only screen and (max-width: 768px) {
-      #produtos .banner .box {
-        margin: 3% 3%;
-        padding: 3% 3%; } }
+  #produtos .banner-produto {
+    background-color: #FFF;
+    padding: 20px;
+    margin-top: 20px;
+    /* h3{
+			color: $color-white;
+			font-family: $font-secondary;
+			font-size: 2em;
+			font-weight: bold;
+		}
+		p{
+			color: $color-green-opaque;
+			padding: 3% 10% 0% 10%;
+		}
+		.box{
+			background-color: $color-blue-dark;
+			margin: 1% 1%;
+			padding:1% 1%;
+			@include responsive(s2) {
+				margin: 3% 3%;
+				padding:3% 3%;
+			}
+			@include responsive(s3) {
+				margin: 3% 3%;
+				padding:3% 3%;
+			}
+		} */ }
+    #produtos .banner-produto h3 {
+      color: #B2BD7E;
+      font-family: "Raleway", sans-serif;
+      font-size: 1.4em;
+      font-weight: bold; }
+    #produtos .banner-produto p {
+      padding: 0%; }
+    #produtos .banner-produto .button {
+      background-color: #FFF;
+      color: #B2BD7E;
+      border: 2px solid;
+      font-size: 14px;
+      font-weight: 600;
+      height: 40px;
+      min-width: 120px;
+      max-width: 240px;
+      text-transform: capitalize;
+      margin: 10px 0px 20px 0px; }
 
 .separator:before {
   text-align: center;
