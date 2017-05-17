@@ -205,6 +205,14 @@ a[href^="https://maps.google.com/maps"] {
         max-width: initial;
         text-align: center;
         float: none; } }
+  #produtos .little {
+    height: 380px; }
+  #produtos .little-g {
+    height: 450px; }
+  #produtos .medium {
+    height: 500px; }
+  #produtos .big {
+    height: 550px; }
   #produtos .banner-produto {
     background-color: #FFF;
     padding: 20px;

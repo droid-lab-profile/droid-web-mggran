@@ -230,6 +230,18 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 			float:none;
 		}
 	}
+	.little {
+		height: 380px;
+	}
+	.little-g {
+		height: 450px;
+	}
+	.medium {
+		height: 500px;
+	}
+	.big {
+		height: 550px;
+	}
 	.banner-produto{
 		background-color: $color-white-full;
 		padding: 20px;
