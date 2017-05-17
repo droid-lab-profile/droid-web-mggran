@@ -24,36 +24,29 @@
       opacity: 0.75;
     }
   } */
-a[href^="http://maps.google.com/maps"] {
-  display: none !important; }
-
-a[href^="https://maps.google.com/maps"] {
-  display: none !important; }
-
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-  display: none; }
-
-.gmnoprint div {
-  background: none !important; }
-
 #home {
   background-color: #F1F7EE;
   padding-top: 65px;
   padding-bottom: 0px; }
+  #home .decoration {
+    padding-top: 65px; }
   #home #logo {
     padding-top: 94px;
     padding-bottom: 15px;
     height: 270px; }
     @media only screen and (max-width: 992px) {
       #home #logo {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        height: 100px; } }
+        padding-top: 0px;
+        padding-bottom: 0px;
+        height: 100px;
+        margin-top: 50px; } }
 
 #sobre {
   background-color: #F1F7EE;
   padding-top: 0px;
   padding-bottom: 45px; }
+  #sobre .row-banners {
+    margin-top: 30px; }
   #sobre h1 {
     font-family: "Raleway", sans-serif;
     color: #223843;
@@ -68,7 +61,8 @@ a[href^="https://maps.google.com/maps"] {
         font-size: 4.3em;
         text-align: center;
         float: none;
-        max-width: initial; } }
+        max-width: initial;
+        margin-bottom: 40px; } }
   #sobre h2 {
     font-family: "Raleway", sans-serif;
     color: #223843;
@@ -88,7 +82,8 @@ a[href^="https://maps.google.com/maps"] {
         max-width: initial; } }
   #sobre p {
     font-family: "Droid Serif", serif;
-    font-size: 1.3em;
+    font-size: 1.23em;
+    line-height: 1.65em;
     padding: 6% 32% 0% 32%;
     text-align: center;
     float: none; }
@@ -141,12 +136,24 @@ a[href^="https://maps.google.com/maps"] {
     @media only screen and (max-width: 1200px) {
       #contato h1 {
         max-width: initial; } }
+    @media only screen and (max-width: 768px) {
+      #contato h1 {
+        font-size: 1.8em;
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 40px; } }
   #contato p {
     padding: 3% 35% 4% 35%;
     color: #749C75;
     font-size: 1em;
     font-family: "Droid Serif", serif;
     font-size: 1.3em; }
+    @media only screen and (max-width: 768px) {
+      #contato p {
+        font-size: 1em;
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 20px; } }
   #contato .separator:before {
     height: 5px;
     width: 8%; }
@@ -169,7 +176,8 @@ a[href^="https://maps.google.com/maps"] {
         font-size: 4.3em;
         text-align: center;
         float: none;
-        max-width: initial; } }
+        max-width: initial;
+        margin-bottom: 30px; } }
   #produtos h2 {
     font-family: "Raleway", sans-serif;
     color: #223843;
@@ -191,7 +199,8 @@ a[href^="https://maps.google.com/maps"] {
     font-family: "Droid Serif", serif;
     padding: 8% 33% 0% 33%;
     text-align: center;
-    font-size: 1.3em; }
+    font-size: 1.23em;
+    line-height: 1.65em; }
     @media only screen and (max-width: 1200px) {
       #produtos p {
         padding: 7% 32% 0% 32%;
@@ -211,51 +220,49 @@ a[href^="https://maps.google.com/maps"] {
         text-align: center;
         float: none; } }
   #produtos .decoration {
-    padding-top: 25px;
-    padding-bottom: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 25%; }
+    @media only screen and (max-width: 768px) {
+      #produtos .decoration {
+        width: 40%; } }
+    @media only screen and (max-width: 480px) {
+      #produtos .decoration {
+        width: 65%; } }
   #produtos .little {
     height: 360px; }
+    @media only screen and (max-width: 480px) {
+      #produtos .little {
+        height: initial; } }
   #produtos .little-g {
     height: 390px; }
+    @media only screen and (max-width: 480px) {
+      #produtos .little-g {
+        height: initial; } }
   #produtos .medium {
     height: 480px; }
+    @media only screen and (max-width: 480px) {
+      #produtos .medium {
+        height: initial; } }
   #produtos .big {
     height: 550px; }
+    @media only screen and (max-width: 480px) {
+      #produtos .big {
+        height: initial; } }
   #produtos .banner-produto {
     background-color: #FFF;
     padding: 20px;
-    margin-top: 20px;
-    /* h3{
-			color: $color-white;
-			font-family: $font-secondary;
-			font-size: 2em;
-			font-weight: bold;
-		}
-		p{
-			color: $color-green-opaque;
-			padding: 3% 10% 0% 10%;
-		}
-		.box{
-			background-color: $color-blue-dark;
-			margin: 1% 1%;
-			padding:1% 1%;
-			@include responsive(s2) {
-				margin: 3% 3%;
-				padding:3% 3%;
-			}
-			@include responsive(s3) {
-				margin: 3% 3%;
-				padding:3% 3%;
-			}
-		} */ }
+    margin-top: 20px; }
+    #produtos .banner-produto img {
+      width: 100%; }
     #produtos .banner-produto h3 {
       color: #B2BD7E;
       font-family: "Raleway", sans-serif;
       font-size: 1.4em;
       font-weight: bold; }
     #produtos .banner-produto p {
-      padding: 0%; }
+      padding: 0%;
+      font-size: 1em; }
     #produtos .banner-produto .button {
       background-color: #FFF;
       color: #B2BD7E;
@@ -268,12 +275,70 @@ a[href^="https://maps.google.com/maps"] {
       text-transform: capitalize;
       margin: 10px 0px 20px 0px; }
 
+#contato-footer {
+  background-image: url("../../../images/bg-02.jpg"); }
+  #contato-footer h1 {
+    padding: 4% 10% 0% 10%;
+    font-family: "Raleway", sans-serif;
+    color: #F1F7EE;
+    font-size: 4em;
+    font-weight: bold; }
+    @media only screen and (max-width: 1200px) {
+      #contato-footer h1 {
+        max-width: initial; } }
+    @media only screen and (max-width: 480px) {
+      #contato-footer h1 {
+        font-size: 3em;
+        padding: 0;
+        padding-bottom: 0px;
+        padding-top: 40px; } }
+  #contato-footer h2 {
+    padding: 1% 10% 0% 10%;
+    font-family: "Droid Serif", serif;
+    color: #F1F7EE;
+    font-size: 3.3em; }
+    @media only screen and (max-width: 1200px) {
+      #contato-footer h2 {
+        max-width: initial; } }
+    @media only screen and (max-width: 480px) {
+      #contato-footer h2 {
+        font-size: 1.5em;
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 20px; } }
+  #contato-footer h3 {
+    font-family: "Raleway", sans-serif;
+    color: #F1F7EE;
+    font-size: 1.9em; }
+    @media only screen and (max-width: 1200px) {
+      #contato-footer h3 {
+        max-width: initial; } }
+    @media only screen and (max-width: 480px) {
+      #contato-footer h3 {
+        font-size: 1.2em;
+        padding: 0;
+        padding-bottom: 15px;
+        padding-top: 0px; } }
+  #contato-footer p {
+    padding: 1% 10% 4% 10%;
+    color: #B2BD7E;
+    font-size: 1.5em; }
+    @media only screen and (max-width: 480px) {
+      #contato-footer p {
+        font-size: 1.2em;
+        padding: 0;
+        padding-bottom: 30px;
+        padding-top: 0px; } }
+  #contato-footer .separator:before {
+    height: 5px;
+    width: 8%; }
+
 .separator:before {
   text-align: center;
   background-color: #B2BD7E;
   content: "";
   display: inline-block;
-  height: 2px;
+  height: 5px;
   position: relative;
   vertical-align: middle;
   width: 20%; }
@@ -288,82 +353,3 @@ a[href^="https://maps.google.com/maps"] {
   @media only screen and (max-width: 480px) {
     .decoration {
       width: 65%; } }
-
-#contato-footer {
-  background-image: url("../../../images/bg-02.jpg"); }
-  #contato-footer h1 {
-    padding: 4% 10% 0% 10%;
-    font-family: "Raleway", sans-serif;
-    color: #F1F7EE;
-    font-size: 4em;
-    font-weight: bold; }
-    @media only screen and (max-width: 1200px) {
-      #contato-footer h1 {
-        max-width: initial; } }
-  #contato-footer h2 {
-    padding: 1% 10% 0% 10%;
-    font-family: "Droid Serif", serif;
-    color: #F1F7EE;
-    font-size: 3.3em; }
-    @media only screen and (max-width: 1200px) {
-      #contato-footer h2 {
-        max-width: initial; } }
-  #contato-footer h3 {
-    font-family: "Raleway", sans-serif;
-    color: #F1F7EE;
-    font-size: 1.9em; }
-    @media only screen and (max-width: 1200px) {
-      #contato-footer h3 {
-        max-width: initial; } }
-  #contato-footer p {
-    padding: 1% 10% 4% 10%;
-    color: #B2BD7E;
-    font-size: 1.5em; }
-  #contato-footer .separator:before {
-    height: 5px;
-    width: 8%; }
-
-footer {
-  height: 300px; }
-  footer p {
-    font-size: 1em; }
-  footer #logo-footer {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    height: 120px; }
-    @media only screen and (max-width: 992px) {
-      footer #logo-footer {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        height: 100px; } }
-  footer .col-socials ul {
-    margin: 0;
-    padding: 0; }
-    footer .col-socials ul li {
-      list-style: none;
-      position: relative;
-      margin-right: 10px;
-      display: inline-block; }
-      footer .col-socials ul li a span {
-        -webkit-transition: all 0.25s ease-in-out 0s;
-        -moz-transform: all 0.25s ease-in-out 0s;
-        -ms-transition: all 0.25s ease-in-out 0s;
-        transition: all 0.25s ease-in-out 0s;
-        position: relative;
-        float: left;
-        background-color: #223843;
-        border-radius: 50%;
-        width: 32px;
-        height: 32px; }
-        footer .col-socials ul li a span:hover {
-          background-color: #F1F7EE; }
-        footer .col-socials ul li a span svg {
-          height: 32px;
-          width: 32px;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          -webkit-transform: translate(-50%, -50%) !important;
-          -moz-transform: translate(-50%, -50%) !important;
-          -ms-transform: translate(-50%, -50%) !important;
-          transform: translate(-50%, -50%) !important; }

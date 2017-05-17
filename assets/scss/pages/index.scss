@@ -10,17 +10,6 @@
 @import '../base/includes/mixins.scss';
 @import '../base/includes/colors.scss';
 
-// Disable Google Maps Logo
-
-a[href^="http://maps.google.com/maps"]{display:none !important}
-a[href^="https://maps.google.com/maps"]{display:none !important}
-
-.gmnoprint a, .gmnoprint span, .gm-style-cc {
-    display:none;
-}
-.gmnoprint div {
-    background:none !important;
-}
 
 // Home
 
@@ -28,15 +17,18 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	background-color: $color-green-opaque;
 	padding-top: 65px;
 	padding-bottom: 0px;
-
+	.decoration{
+		padding-top: 65px;
+	}
 	#logo{
 		padding-top: 94px;
 		padding-bottom: 15px;
 		height: 270px;
 		@include responsive(s2) {
-		 	padding-top: 10px;
-		 	padding-bottom: 10px;
-		 	height: 100px;
+			padding-top: 0px;
+			padding-bottom: 0px;
+			height: 100px;
+			margin-top: 50px;
 		}
 	}
 }
@@ -45,13 +37,15 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	background-color: $color-green-opaque;
 	padding-top: 0px;
 	padding-bottom: 45px;
+	.row-banners{
+		margin-top: 30px;
+	}
 	h1{
 		font-family: $font-secondary;
 		color: $color-green-dark;
 		font-size: 6.1em;
 		line-height: 0.1;
 		color: $color-mostarda;
-
 		@include responsive(s1) {
 			font-size: 5.3em;
 		}
@@ -60,6 +54,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 			text-align: center;
 			float:none;
 			max-width: initial;
+			margin-bottom: 40px;
 		}
 	}
 	h2{
@@ -83,7 +78,8 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	}
 	p{
 		font-family: $font-primary;
-		font-size: 1.3em;
+		font-size: 1.23em;
+		line-height: 1.65em;
 		padding: 6% 32% 0% 32%;
 		text-align: center;
 		float:none;
@@ -133,8 +129,6 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	}
 }
 
-// Contato
-
 #contato {
 	background-image: url('../../../images/bg-01.jpg');
 	h1{
@@ -145,6 +139,12 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		@include responsive(s1) {
 			max-width: initial;
 		}
+		@include responsive(s3) {
+			font-size: 1.8em;
+			padding: 0;
+			padding-bottom: 15px;
+			padding-top: 40px;
+		}
 	}
 	p {
 		padding: 3% 35% 4% 35%;
@@ -152,13 +152,18 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		font-size: 1em;
 		font-family: $font-primary;
 		font-size: 1.3em;
+		@include responsive(s3) {
+			font-size: 1em;
+			padding: 0;
+			padding-bottom: 15px;
+			padding-top: 20px;
+		}
 	}
 	.separator:before {
 		height: 5px;
 		 width: 8%;
 	}
 }
-
 
 #produtos {
 	background-color: $color-green-opaque;
@@ -179,6 +184,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 			text-align: center;
 			float:none;
 			max-width: initial;
+			margin-bottom: 30px;
 		}
 	}
 	h2{
@@ -187,11 +193,6 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		font-size: 3.3em;
 		font-style: italic;
     	margin-top: 80px;
-		// text-align: right;
-		// text-transform: uppercase;
-		// max-width: 390px;
-		// text-align: right;
-		// float: right;
 		.home-green{
 			color: $color-green-light;
 		}
@@ -209,8 +210,8 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		font-family: $font-primary;
 		padding: 8% 33% 0% 33%;
 		text-align: center;
-		font-size: 1.3em;
-
+		font-size: 1.23em;
+		line-height: 1.65em;
 		@include responsive(s1) {
 			padding: 7% 32% 0% 32%;
 			max-width: initial;
@@ -231,23 +232,44 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		}
 	}
 	.decoration {
-	    padding-top: 25px;
-	    padding-bottom: 28px;
+	    padding-top: 30px;
+	    padding-bottom: 30px;
 	    width: 25%;
+		@include responsive(s3) {
+			width: 40%;
+		}
+		@include responsive(s4) {
+			width: 65%;
+		}
 	}
 	.little {
 		height: 360px;
+		@include responsive(s4) {
+			height: initial;
+		}
 	}
 	.little-g {
 		height: 390px;
+		@include responsive(s4) {
+			height: initial;
+		}
 	}
 	.medium {
 		height: 480px;
+		@include responsive(s4) {
+			height: initial;
+		}
 	}
 	.big {
 		height: 550px;
+		@include responsive(s4) {
+			height: initial;
+		}
 	}
 	.banner-produto{
+		img{
+			width:100%;
+		}
 		background-color: $color-white-full;
 		padding: 20px;
 		margin-top: 20px;
@@ -259,6 +281,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		}
 		p {
 			padding: 0%;
+			font-size: 1em;
 		}
 		.button {
    			background-color: $color-white-full;
@@ -272,55 +295,6 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		    text-transform: capitalize;
 		    margin: 10px 0px 20px 0px;
 		}
-		/* h3{
-			color: $color-white;
-			font-family: $font-secondary;
-			font-size: 2em;
-			font-weight: bold;
-		}
-		p{
-			color: $color-green-opaque;
-			padding: 3% 10% 0% 10%;
-		}
-		.box{
-			background-color: $color-blue-dark;
-			margin: 1% 1%;
-			padding:1% 1%;
-			@include responsive(s2) {
-				margin: 3% 3%;
-				padding:3% 3%;
-			}
-			@include responsive(s3) {
-				margin: 3% 3%;
-				padding:3% 3%;
-			}
-		} */
-	}
-}
-
-// separator
-
-.separator:before {
-	text-align: center;
-    background-color: $color-mostarda;
-    content: "";
-    display: inline-block;
-    height: 2px;
-    position: relative;
-    vertical-align: middle;
-    width: 20%;
-}
-
-// Decoration
-.decoration{
-	padding-top: 71px;
-	padding-bottom: 28px;
-	width: 25%;
-	@include responsive(s3) {
-		width: 40%;
-	}
-	@include responsive(s4) {
-		width: 65%;
 	}
 }
 
@@ -335,6 +309,12 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		@include responsive(s1) {
 			max-width: initial;
 		}
+		@include responsive(s4) {
+			font-size: 3em;
+			padding: 0;
+			padding-bottom: 0px;
+			padding-top: 40px;
+		}
 	}
 	h2{
 		padding: 1% 10% 0% 10%;
@@ -344,6 +324,12 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		@include responsive(s1) {
 			max-width: initial;
 		}
+		@include responsive(s4) {
+			font-size: 1.5em;
+			padding: 0;
+			padding-bottom: 15px;
+			padding-top: 20px;
+		}
 	}
 	h3{
 		font-family: $font-secondary;
@@ -352,11 +338,23 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		@include responsive(s1) {
 			max-width: initial;
 		}
+		@include responsive(s4) {
+			font-size: 1.2em;
+			padding: 0;
+			padding-bottom: 15px;
+			padding-top: 0px;
+		}
 	}
 	p {
 		padding: 1% 10% 4% 10%;
 		color: $color-mostarda;
 		font-size: 1.5em;
+		@include responsive(s4) {
+			font-size: 1.2em;
+			padding: 0;
+			padding-bottom: 30px;
+			padding-top: 0px;
+		}
 	}
 	.separator:before {
 		height: 5px;
@@ -364,55 +362,29 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	}
 }
 
-// Footer
+// Separator
 
-footer{
-	height: 300px;
+.separator:before {
+	text-align: center;
+    background-color: $color-mostarda;
+    content: "";
+    display: inline-block;
+    height: 5px;
+    position: relative;
+    vertical-align: middle;
+    width: 20%;
+}
 
-	p {
-		font-size: 1em;
+// Decoration
+
+.decoration{
+	padding-top: 71px;
+	padding-bottom: 28px;
+	width: 25%;
+	@include responsive(s3) {
+		width: 40%;
 	}
-
-	#logo-footer {
-		padding-top: 40px;
-		padding-bottom: 40px;
-		height: 120px;
-		@include responsive(s2) {
-		 	padding-top: 10px;
-		 	padding-bottom: 10px;
-		 	height: 100px;
-		}
-	}
-	.col-socials{
-		ul{
-			margin: 0;
-			padding: 0;
-			li{
-				list-style: none;
-				position: relative;
-				margin-right: 10px;
-				display:inline-block;
-				a{
-					span{
-						@include transition(.25s);
-						&:hover{
-							background-color: $color-white;
-						}
-						position: relative;
-						float: left;
-						background-color: $color-blue-dark;
-						border-radius: 50%;
-						width: 32px;
-						height: 32px;
-						svg{
-							height: 32px;
-							width: 32px;
-							position: absolute;
-							@include align(50%, 50%, -50%, -50%)
-						}
-					}
-				}
-			}
-		}
+	@include responsive(s4) {
+		width: 65%;
 	}
 }

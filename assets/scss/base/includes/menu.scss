@@ -39,17 +39,16 @@ nav{
 				font-size: $size-s1;
 				padding: 10px;
 				font-family: $font-secondary;
-				text-transform: uppercase;
+				font-weight: 600;
 				@include responsive(s4) {
 					font-size: 2em;
 				}
 				a{
 					color: $color-blue-dark;
 					font-family: $font-secondary;
-					//font-size: 3em;
 					@include transition(.25s);
 					&:hover{
-						color: $color-green-dark;
+						color: $color-green-light;
 					}
 				}
 			}

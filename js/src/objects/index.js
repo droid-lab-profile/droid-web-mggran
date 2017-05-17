@@ -1,6 +1,12 @@
 Index = {
     init: function(){
     	Index.setGallery();
+        Index.setButton();
+    },
+    setButton: function(){
+        $(".btn-contato").on('click', function(){
+            $('html, body').stop().animate({ scrollTop: $("#contato-footer").offset().top}, 1000, 'easeOutQuart');
+        });
     },
     setGallery: function(){
 		$("[data-fancybox]").fancybox({
