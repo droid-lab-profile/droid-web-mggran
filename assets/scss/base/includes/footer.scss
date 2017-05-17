@@ -55,11 +55,11 @@ footer{
 						float: left;
 						background-color: $color-blue-dark;
 						border-radius: 50%;
-						width: 32px;
-						height: 32px;
+						width: 48px;
+						height: 48px;
 						svg{
-							height: 32px;
-							width: 32px;
+							height: 48px;
+							width: 48px;
 							position: absolute;
 							@include align(50%, 50%, -50%, -50%)
 						}
