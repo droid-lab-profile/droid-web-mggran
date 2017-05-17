@@ -30,8 +30,8 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	padding-bottom: 0px;
 
 	#logo{
-		padding-top: 40px;
-		padding-bottom: 40px;
+		padding-top: 94px;
+		padding-bottom: 15px;
 		height: 270px;
 		@include responsive(s2) {
 		 	padding-top: 10px;
@@ -44,7 +44,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 #sobre{
 	background-color: $color-green-opaque;
 	padding-top: 0px;
-	padding-bottom: 65px;
+	padding-bottom: 45px;
 	h1{
 		font-family: $font-secondary;
 		color: $color-green-dark;
@@ -67,11 +67,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		color: $color-green-dark;
 		font-size: 3.7em;
 		font-style: italic;
-		// text-align: right;
-		// text-transform: uppercase;
-		// max-width: 390px;
-		// text-align: right;
-		// float: right;
+	    font-weight: 100;
 		.home-green{
 			color: $color-green-light;
 		}
@@ -88,7 +84,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	p{
 		font-family: $font-primary;
 		font-size: 1.3em;
-		padding: 7% 32% 0% 32%;
+		padding: 6% 32% 0% 32%;
 		text-align: center;
 		float:none;
 		@include responsive(s1) {
@@ -123,7 +119,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		}
 		.box{
 			background-color: $color-blue-dark;
-			margin: 1% 1%;
+			margin: 2% 3%;
 			padding:1% 1%;
 			@include responsive(s2) {
 				margin: 3% 3%;
@@ -142,7 +138,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 #contato {
 	background-image: url('../../../images/bg-01.jpg');
 	h1{
-		padding: 6% 10% 2% 10%;
+		padding: 5% 10% 3% 10%;
 		font-family: $font-secondary;
 		color: $color-white;
 		font-size: 3em;
@@ -151,9 +147,11 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		}
 	}
 	p {
-		padding: 4% 35% 4% 35%;
+		padding: 3% 35% 4% 35%;
 		color: $color-green-light;
 		font-size: 1em;
+		font-family: $font-primary;
+		font-size: 1.3em;
 	}
 	.separator:before {
 		height: 5px;
@@ -186,8 +184,9 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 	h2{
 		font-family: $font-secondary;
 		color: $color-green-dark;
-		font-size: 3.7em;
+		font-size: 3.3em;
 		font-style: italic;
+    	margin-top: 80px;
 		// text-align: right;
 		// text-transform: uppercase;
 		// max-width: 390px;
@@ -210,6 +209,7 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 		font-family: $font-primary;
 		padding: 8% 33% 0% 33%;
 		text-align: center;
+		font-size: 1.3em;
 
 		@include responsive(s1) {
 			padding: 7% 32% 0% 32%;
@@ -230,14 +230,19 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 			float:none;
 		}
 	}
+	.decoration {
+	    padding-top: 25px;
+	    padding-bottom: 28px;
+	    width: 25%;
+	}
 	.little {
-		height: 380px;
+		height: 360px;
 	}
 	.little-g {
-		height: 450px;
+		height: 390px;
 	}
 	.medium {
-		height: 500px;
+		height: 480px;
 	}
 	.big {
 		height: 550px;
@@ -308,14 +313,14 @@ a[href^="https://maps.google.com/maps"]{display:none !important}
 
 // Decoration
 .decoration{
-	padding-top: 20px;
-	padding-bottom: 20px;
-	width: 27%;
+	padding-top: 71px;
+	padding-bottom: 28px;
+	width: 25%;
 	@include responsive(s3) {
 		width: 40%;
 	}
 	@include responsive(s4) {
-		width: 90%;
+		width: 65%;
 	}
 }
 
@@ -397,8 +402,8 @@ footer{
 						float: left;
 						background-color: $color-blue-dark;
 						border-radius: 50%;
-						width: 55px;
-						height: 55px;
+						width: 32px;
+						height: 32px;
 						svg{
 							height: 32px;
 							width: 32px;

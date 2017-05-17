@@ -54,7 +54,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #223843;
+    background-color: #B2BD7E;
     width: 100vw;
     height: 100vh;
     transform: translateY(115%);
@@ -86,7 +86,8 @@ nav {
           nav .menu-dropdown ul li {
             font-size: 2em; } }
         nav .menu-dropdown ul li a {
-          color: #F1F7EE;
+          color: #223843;
+          font-family: "Raleway", sans-serif;
           -webkit-transition: all 0.25s ease-in-out 0s;
           -moz-transform: all 0.25s ease-in-out 0s;
           -ms-transition: all 0.25s ease-in-out 0s;
@@ -175,23 +176,23 @@ nav {
   color: #223843;
   background-color: #B2BD7E;
   font-family: "Raleway", sans-serif;
-  font-size: 2em;
-  font-weight: 600;
-  overflow: hidden;
+  font-size: 1.3em;
+  font-weight: 800;
   padding: 0;
   transition: border-color 0.3s, background-color 0.3s;
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
   border: 0px solid;
   border-radius: 60px;
+  letter-spacing: -2px;
   text-transform: uppercase;
-  height: 90px;
-  min-width: 250px;
+  height: 47px;
+  min-width: 167px;
   max-width: 350px;
   margin: 1em;
   vertical-align: middle;
   position: relative;
   z-index: 1;
-  margin: 10px 0px 70px 0px; }
+  margin: 10px 0px 81px 0px; }
 
 * {
   outline: none; }

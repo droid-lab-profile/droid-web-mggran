@@ -41,8 +41,8 @@ a[href^="https://maps.google.com/maps"] {
   padding-top: 65px;
   padding-bottom: 0px; }
   #home #logo {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 94px;
+    padding-bottom: 15px;
     height: 270px; }
     @media only screen and (max-width: 992px) {
       #home #logo {
@@ -53,7 +53,7 @@ a[href^="https://maps.google.com/maps"] {
 #sobre {
   background-color: #F1F7EE;
   padding-top: 0px;
-  padding-bottom: 65px; }
+  padding-bottom: 45px; }
   #sobre h1 {
     font-family: "Raleway", sans-serif;
     color: #223843;
@@ -73,7 +73,8 @@ a[href^="https://maps.google.com/maps"] {
     font-family: "Raleway", sans-serif;
     color: #223843;
     font-size: 3.7em;
-    font-style: italic; }
+    font-style: italic;
+    font-weight: 100; }
     #sobre h2 .home-green {
       color: #749C75; }
     @media only screen and (max-width: 1200px) {
@@ -88,7 +89,7 @@ a[href^="https://maps.google.com/maps"] {
   #sobre p {
     font-family: "Droid Serif", serif;
     font-size: 1.3em;
-    padding: 7% 32% 0% 32%;
+    padding: 6% 32% 0% 32%;
     text-align: center;
     float: none; }
     @media only screen and (max-width: 1200px) {
@@ -119,7 +120,7 @@ a[href^="https://maps.google.com/maps"] {
     padding: 3% 10% 0% 10%; }
   #sobre .banner .box {
     background-color: #223843;
-    margin: 1% 1%;
+    margin: 2% 3%;
     padding: 1% 1%; }
     @media only screen and (max-width: 992px) {
       #sobre .banner .box {
@@ -133,7 +134,7 @@ a[href^="https://maps.google.com/maps"] {
 #contato {
   background-image: url("../../../images/bg-01.jpg"); }
   #contato h1 {
-    padding: 6% 10% 2% 10%;
+    padding: 5% 10% 3% 10%;
     font-family: "Raleway", sans-serif;
     color: #F1F7EE;
     font-size: 3em; }
@@ -141,9 +142,11 @@ a[href^="https://maps.google.com/maps"] {
       #contato h1 {
         max-width: initial; } }
   #contato p {
-    padding: 4% 35% 4% 35%;
+    padding: 3% 35% 4% 35%;
     color: #749C75;
-    font-size: 1em; }
+    font-size: 1em;
+    font-family: "Droid Serif", serif;
+    font-size: 1.3em; }
   #contato .separator:before {
     height: 5px;
     width: 8%; }
@@ -170,8 +173,9 @@ a[href^="https://maps.google.com/maps"] {
   #produtos h2 {
     font-family: "Raleway", sans-serif;
     color: #223843;
-    font-size: 3.7em;
-    font-style: italic; }
+    font-size: 3.3em;
+    font-style: italic;
+    margin-top: 80px; }
     #produtos h2 .home-green {
       color: #749C75; }
     @media only screen and (max-width: 1200px) {
@@ -186,7 +190,8 @@ a[href^="https://maps.google.com/maps"] {
   #produtos p {
     font-family: "Droid Serif", serif;
     padding: 8% 33% 0% 33%;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.3em; }
     @media only screen and (max-width: 1200px) {
       #produtos p {
         padding: 7% 32% 0% 32%;
@@ -205,12 +210,16 @@ a[href^="https://maps.google.com/maps"] {
         max-width: initial;
         text-align: center;
         float: none; } }
+  #produtos .decoration {
+    padding-top: 25px;
+    padding-bottom: 28px;
+    width: 25%; }
   #produtos .little {
-    height: 380px; }
+    height: 360px; }
   #produtos .little-g {
-    height: 450px; }
+    height: 390px; }
   #produtos .medium {
-    height: 500px; }
+    height: 480px; }
   #produtos .big {
     height: 550px; }
   #produtos .banner-produto {
@@ -270,15 +279,15 @@ a[href^="https://maps.google.com/maps"] {
   width: 20%; }
 
 .decoration {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: 27%; }
+  padding-top: 71px;
+  padding-bottom: 28px;
+  width: 25%; }
   @media only screen and (max-width: 768px) {
     .decoration {
       width: 40%; } }
   @media only screen and (max-width: 480px) {
     .decoration {
-      width: 90%; } }
+      width: 65%; } }
 
 #contato-footer {
   background-image: url("../../../images/bg-02.jpg"); }
@@ -344,8 +353,8 @@ footer {
         float: left;
         background-color: #223843;
         border-radius: 50%;
-        width: 55px;
-        height: 55px; }
+        width: 32px;
+        height: 32px; }
         footer .col-socials ul li a span:hover {
           background-color: #F1F7EE; }
         footer .col-socials ul li a span svg {
