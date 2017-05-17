@@ -30,12 +30,12 @@
 		<meta itemprop="description"     content="">
 		<link href="./assets/images/favicon.png" rel="icon" type="image/x-icon"/>
 		<script>
-		  /*(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		  ga('create', '', 'auto');
-		  ga('send', 'pageview');*/
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+			ga('create', 'UA-99338742-1', 'auto');
+			ga('send', 'pageview');
 		</script>
 	</head>
 	<body>
@@ -92,41 +92,35 @@
 							<img src="assets/images/decoration.svg" alt="Logo MGGran" class="img-responsive img-center decoration"/>
 						</div>
 					</div>
-
-					<div class="row">
-						<div class="col-lg-1"></div>
-						<div class="col-lg-10">
-							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
-								<div class="box">
-									<h3>Missão</h3>
-									<span class="separator"/>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
-								<div class="box">
-									<h3>Visão</h3>
-									<span class="separator"/>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									</p>
-								</div>
-							</div>
-							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
-								<div class="box">
-									<h3>Valores</h3>
-									<span class="separator"/>
-									<p>
-										Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-									</p>
-								</div>
+					<div class="row row-banners">
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
+							<div class="box">
+								<h3>Missão</h3>
+								<span class="separator"/>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
 							</div>
 						</div>
-						<div class="col-lg-1"></div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
+							<div class="box">
+								<h3>Visão</h3>
+								<span class="separator"/>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
+							<div class="box">
+								<h3>Valores</h3>
+								<span class="separator"/>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
 					</div>
-
 				</div>
 			</section>
 			<section id="contato">
@@ -135,14 +129,12 @@
 						<div class="col-lg-12 center">
 							<h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
 							<span class="separator"/>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-							</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
 					<div class="row">
 						<div class="col-lg-12 center">
-							<button class="button" data-text="Publish"><span>Contato</span></button>
+							<button class="button btn-contato" data-text="Publish"><span>Contato</span></button>
 						</div>
 					</div>
 				</div>
@@ -169,126 +161,112 @@
 							<img src="assets/images/decoration.svg" alt="Logo MGGran" class="img-responsive img-center decoration"/>
 						</div>
 					</div>
-
-					<!-- Fancybox -->
 					<div class="row">
 						<div class="col-md-1"></div>
 						<div class="col-md-10 center">
-							<!-- p1 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little">
 									<a href="./assets/images/produtos/full-produtos/full-produto-01.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/01-verde-ubatuba.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/01-verde-ubatuba.jpg"/>
 									</a>
 									<h3>Granito Verde Ubatuba</h3>
 									<p>Se polido, pode ser facilmente limpo, utilizando apenas pano úmido ou água e abão neutro.</p>
 								</div>
 							</div>
-							<!-- p2 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little">
 									<a href="./assets/images/produtos/full-produtos/full-produto-02.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/02-sao-gabriel.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/02-sao-gabriel.jpg"/>
 									</a>
 									<h3>Granito Preto São Gabriel</h3>
 									<p>O Granito possui estrutura compacta em pretos e granulação média perfeito para ambientes internos e externos.</p>
 								</div>
 							</div>
-							<!-- p6 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little">
 									<a href="./assets/images/produtos/full-produtos/full-produto-06.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/06-travertino.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/06-travertino.jpg"/>
 									</a>
 									<h3>Granito Travertino</h3>
 									<p>É uma pedra natural de cor bege clara, caracterizada por veios longilíneos, que lembram ramos e folhas.</p>
 								</div>
 							</div>
-							<!-- p11 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little-g">
 									<a href="./assets/images/produtos/full-produtos/full-produto-11.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/11-preto-indiano.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/11-preto-indiano.jpg"/>
 									</a>
 									<h3>Granito Preto Indiano</h3>
 									<p>Muito marcado por veios brancos, ele possui presença marcante na decoração. Ele combina muito bem com móveis brancos e amadeirados.</p>
 								</div>
 							</div>
-							<!-- p5 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little-g">
 									<a href="./assets/images/produtos/full-produtos/full-produto-05.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/05-branco-dallas.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/05-branco-dallas.jpg"/>
 									</a>
 									<h3>Granito Branco Dallas</h3>
 									<p>Por ser rígido, reveste pisos de ambiente externo com grande movimentação de pessoas, além de áreas internas, como banheiros, pias de cozinhas e bancadas, fachadas, entre outros.</p>
 								</div>
 							</div>
-							<!-- p3 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little-g">
 									<a href="./assets/images/produtos/full-produtos/full-produto-03.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/03-marrom-absoluto.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/03-marrom-absoluto.jpg"/>
 									</a>
 									<h3>Granito Marrom Absoluto</h3>
 									<p>O granito é composto de quartzo, feldspato e mica (material responsável pela cor) que lhe conferem uma dureza muito elevada na escala de mohs e uma alta resistência à abrasão.</p>
 								</div>
 							</div>
-							<!-- p7 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little-g">
 									<a href="./assets/images/produtos/full-produtos/full-produto-07.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/07-marmore-carrarinha.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/07-marmore-carrarinha.jpg"/>
 									</a>
 									<h3>Marmore Carrarinha</h3>
 									<p>O Mármore Carrara, também chamado Bianco Carrara, é uma pedra natural de origem italiana, caracterizado por ser branco com veios cinza.</p>
 								</div>
 							</div>
-							<!-- p8 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little-g">
 									<a href="./assets/images/produtos/full-produtos/full-produto-08.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/08-marrom-sao-paulo.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/08-marrom-sao-paulo.jpg"/>
 									</a>
 									<h3>Granito Marrom São Paulo</h3>
 									<p>Amplamente utilizado em pisos e revestimentos interno e externos.</p>
 								</div>
 							</div>
-							<!-- p9 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto little-g">
 									<a href="./assets/images/produtos/full-produtos/full-produto-09.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/09-azul-noruegues.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/09-azul-noruegues.jpg"/>
 									</a>
 									<h3>Granito Azul Norueguês</h3>
 									<p>As matrizes das rochas silicatadas, geralmente, apresentam-se na cor negra, possibilitada pela presença de minerais máficos (anfíbolas e micas).</p>
 								</div>
 							</div>
-							<!-- p10 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto medium">
 									<a href="./assets/images/produtos/full-produtos/full-produto-10.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/10-arabesco.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/10-arabesco.jpg"/>
 									</a>
 									<h3>Granito Arabesco</h3>
 									<p>O granito Arabesco é um revestimento natural, formado de três minerais: mica, quartzo e feldspato. Isso significa que o granito possui dureza e abrasão (não arranha) muito maior que mármores, porcelanatos e piso cerâmico.</p>
 								</div>
 							</div>
-							<!-- p4 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto medium">
 									<a href="./assets/images/produtos/full-produtos/full-produto-04.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/04-ocre-itabira.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/04-ocre-itabira.jpg"/>
 									</a>
 									<h3>Granito Ocre Itabverira</h3>
 									<p>O Granito Ocre Itabira, assim como as outras pedras do mesmo gênero, possui alta resistência a impactos e baixa absorção de água, sendo indicado para ambientes que tenham grande circulação de pessoas e estejam expostos a ações da natureza, como chuva e sol.</p>
 								</div>
 							</div>
-							<!-- p12 -->
 							<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 banner center">
 								<div class="banner-produto medium">
 									<a href="./assets/images/produtos/full-produtos/full-produto-12.jpg" data-fancybox="item-produto">
-										<img src="./assets/images/produtos/thumbs/12-vermelho-brasilia.jpg" height="120px" width="170px"/>
+										<img src="./assets/images/produtos/thumbs/12-vermelho-brasilia.jpg"/>
 									</a>
 									<h3>Granito Vermelho Brasília</h3>
 									<p>Possui fundo vermelho, com megacristais esparsos de feldspato vermelho claro e pigmentos pretos e granulação fina a média.</p>
@@ -298,21 +276,6 @@
 						<div class="col-md-1"></div>
 					</div>
 				</div>
-
-
-
-				<!-- <div class="container">
-					<div class="row">
-						<div class="col-lg-offset-5 col-lg-7 col-md-offset-7 col-md-7 col-sm-12 col-xs-12 right">
-							<a href="./assets/images/bg-01.jpg" data-fancybox="item-produto">
-								<img src="./assets/images/bg-01.jpg" height="50px" width="50px"/>
-							</a>
-							<a href="./assets/images/bg-01.jpg" data-fancybox="item-produto">
-								<img src="./assets/images/bg-01.jpg" height="50px" width="50px"/>
-							</a>
-						</div>
-					</div>
-				</div> -->
 			</section>
 			<section id="contato-footer" class="banner">
 				<div class="container">

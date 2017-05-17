@@ -49,13 +49,13 @@ a{
 
 // Selection
 ::-moz-selection {
-  color: $color-white;
-  background: $color-green-light;
+  color: $color-blue-dark;
+  background: $color-green-opaque;
 }
 
 ::selection {
-  color: $color-white;
-  background: $color-green-light;
+  color: $color-blue-dark;
+  background: $color-green-opaque;
 }
 
 // Headings

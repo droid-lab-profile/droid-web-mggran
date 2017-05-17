@@ -4,17 +4,3 @@
 
 // Animations
 // Animations of projet here
-
-// Floating
-
-@-webkit-keyframes animation-floating-down {
-  0%   { transform: translate(-50%, 0) rotate(45deg); }
-  50%  { transform: translate(-50%, -5px) rotate(45deg); }
-  100% { transform: translate(-50%, 0) rotate(45deg); }
-}
-
-@keyframes animation-floating-down {
-  0%   { transform: translate(-50%, 0) rotate(45deg); }
-  50%  { transform: translate(-50%, -5px) rotate(45deg); }
-  100% { transform: translate(-50%, 0) rotate(45deg); }
-}

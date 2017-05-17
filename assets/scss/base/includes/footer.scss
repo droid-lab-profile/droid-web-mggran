@@ -6,5 +6,66 @@
 // Set the project footer here
 
 footer{
-
+	min-height: 300px;
+	p {
+	    font-size: 1.23em;
+	    line-height: 1.65em;
+	}
+	#logo-footer {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		height: 120px;
+		@include responsive(s2) {
+		 	padding-top: 10px;
+		 	padding-bottom: 10px;
+		 	height: 60px;
+		 	margin-top: 40px;
+		 	margin-bottom: 50px;
+		}
+	}
+	.decoration {
+	    padding-top: 30px;
+	    padding-bottom: 30px;
+	    width: 25%;
+		@include responsive(s3) {
+			width: 40%;
+		}
+		@include responsive(s4) {
+			width: 65%;
+		}
+	}
+	.col-socials{
+		margin-bottom: 30px;
+		margin-top: 10px;
+		ul{
+			margin: 0;
+			padding: 0;
+			li{
+				list-style: none;
+				position: relative;
+				margin-right: 10px;
+				display:inline-block;
+				a{
+					span{
+						@include transition(.25s);
+						&:hover{
+							background-color: $color-mostarda;
+						}
+						position: relative;
+						float: left;
+						background-color: $color-blue-dark;
+						border-radius: 50%;
+						width: 32px;
+						height: 32px;
+						svg{
+							height: 32px;
+							width: 32px;
+							position: absolute;
+							@include align(50%, 50%, -50%, -50%)
+						}
+					}
+				}
+			}
+		}
+	}
 }

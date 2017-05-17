@@ -64,7 +64,7 @@ Oracle = {
 			scrollspeed        : 90,
 			mousescrollstep    : 60,
 			cursoropacitymax   : 0.8,
-			cursorcolor        : "#00a9bb",
+			cursorcolor        : "#B2BD7E",
 			horizrailenabled   : false,
 			cursorborder       : "none",
 			cursorborderradius : "0px"
@@ -77,7 +77,7 @@ Oracle = {
 		loaded : false,
 		config : {
 			delay    : 500,
-			recheck  : 200,
+			recheck  : 1500,
 			velocity : "slow"
 		},
 		init: function(){
@@ -193,5 +193,7 @@ $(document).ready(function() {
 });
 
 $(window).load(function(){
-	Oracle.Preloader.loaded = true;
+	setTimeout(function(){
+		Oracle.Preloader.loaded = true;
+	}, 500);
 })
