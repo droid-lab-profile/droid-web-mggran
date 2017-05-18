@@ -277,7 +277,7 @@
 
 #contato-footer {
   background-image: url("../../../images/bg-02.jpg");
-  padding-bottom: 30px; }
+  padding-bottom: 60px; }
   #contato-footer h1 {
     padding: 4% 10% 0% 10%;
     font-family: "Raleway", sans-serif;
@@ -308,24 +308,29 @@
         padding-bottom: 15px;
         padding-top: 20px; } }
   #contato-footer h3 {
-    font-family: "Raleway", sans-serif;
     color: #F1F7EE;
-    font-size: 1.9em; }
-    @media only screen and (max-width: 1200px) {
-      #contato-footer h3 {
-        max-width: initial; } }
-    @media only screen and (max-width: 480px) {
-      #contato-footer h3 {
-        font-size: 1.2em;
-        padding: 0;
-        padding-bottom: 15px;
-        padding-top: 0px; } }
-  #contato-footer p {
-    padding: 1% 10% 4% 10%;
+    margin-bottom: 45px; }
+    #contato-footer h3 span {
+      font-size: 0.8em; }
+      @media only screen and (max-width: 480px) {
+        #contato-footer h3 span {
+          font-size: 0.5em; } }
+      #contato-footer h3 span a {
+        font-family: "Droid Serif", serif;
+        color: #F1F7EE; }
+        @media only screen and (max-width: 1200px) {
+          #contato-footer h3 span a {
+            max-width: initial; } }
+        @media only screen and (max-width: 480px) {
+          #contato-footer h3 span a {
+            padding: 0;
+            padding-bottom: 15px;
+            padding-top: 0px; } }
+  #contato-footer .address {
     color: #B2BD7E;
     font-size: 1.5em; }
     @media only screen and (max-width: 480px) {
-      #contato-footer p {
+      #contato-footer .address {
         font-size: 1.2em;
         padding: 0;
         padding-bottom: 30px;
