@@ -276,7 +276,8 @@
       margin: 10px 0px 20px 0px; }
 
 #contato-footer {
-  background-image: url("../../../images/bg-02.jpg"); }
+  background-image: url("../../../images/bg-02.jpg");
+  padding-bottom: 30px; }
   #contato-footer h1 {
     padding: 4% 10% 0% 10%;
     font-family: "Raleway", sans-serif;
