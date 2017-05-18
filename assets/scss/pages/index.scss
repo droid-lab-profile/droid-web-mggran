@@ -300,6 +300,7 @@
 
 #contato-footer{
 	background-image: url('../../../images/bg-02.jpg');
+	padding-bottom: 60px;
 	h1{
 		padding: 4% 10% 0% 10%;
 		font-family: $font-secondary;
@@ -332,21 +333,28 @@
 		}
 	}
 	h3{
-		font-family: $font-secondary;
 		color: $color-white;
-		font-size: 1.9em;
-		@include responsive(s1) {
-			max-width: initial;
-		}
-		@include responsive(s4) {
-			font-size: 1.2em;
-			padding: 0;
-			padding-bottom: 15px;
-			padding-top: 0px;
+		margin-bottom: 45px;
+		span{
+			font-size: 0.8em;
+			@include responsive(s4) {
+				font-size: 0.5em;
+			}
+			a{
+				font-family: $font-primary;
+				color: $color-white;
+				@include responsive(s1) {
+					max-width: initial;
+				}
+				@include responsive(s4) {
+					padding: 0;
+					padding-bottom: 15px;
+					padding-top: 0px;
+				}
+			}
 		}
 	}
-	p {
-		padding: 1% 10% 4% 10%;
+	.address {
 		color: $color-mostarda;
 		font-size: 1.5em;
 		@include responsive(s4) {

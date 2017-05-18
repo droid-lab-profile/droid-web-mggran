@@ -45,7 +45,7 @@ Gulp = {
 		});
 	},
 	default: function(){
-		Gulp.self.task('default', ['js', 'css', 'scss']);
+		Gulp.self.task('default', ['js', 'scss', 'css']);
 	},
 	watch: function(){
 		Gulp.self.task('watch', function(){

@@ -12,19 +12,18 @@
 	font-size: 1.3em;
 	font-weight: 800;
     padding: 0;
-	transition: border-color 0.3s, background-color 0.3s;
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 	border: 0px solid;
 	border-radius: 60px;
     text-transform: uppercase;
-    height:47px;
-    min-width: 167px;
-    max-width: 350px;
-    margin: 1em;
+    height: 60px;
+    min-width: 200px;
     vertical-align: middle;
     position: relative;
     z-index: 1;
-    margin: 10px 0px 81px 0px;
+    margin: 10px 0 80px;
+    vertical-align: middle;
+    position: relative;
+    z-index: 1;
     @include transition(.3s);
     &:hover{
         background-color: $color-white;
